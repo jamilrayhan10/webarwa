@@ -6141,7 +6141,7 @@ textarea {
 	position: relative;
 	transition: all 0.4s;
 	/* border-radius: 0 0 50px 50px; */
-	background-color: #dfdfdf;
+	background-color: #ffffff;
 }
 @media (max-width: 1199px) {
 	.rk-theme-breadcrumb {

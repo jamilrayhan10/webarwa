@@ -19,6 +19,7 @@ export default function Breacrumb({ title, page  }: BreacrumbProps) {
           </div>
         </div>
       </div>
+      <div className="top-line"></div>
     </div>
   )
 }
