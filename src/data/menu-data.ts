@@ -15,9 +15,9 @@ interface MenuItem {
 
 const menu_data  = [
   {
-    title: "Products",
+    title: "Templates",
     // has_submenu: true,
-    path: "/products",
+    path: "/templates",
     // sub_menus: [
     //   { title: "Home 01", path: "/" },
     //   { title: "Home 02", path: "/home-2" },

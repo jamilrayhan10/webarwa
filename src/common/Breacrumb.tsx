@@ -7,19 +7,14 @@ interface BreacrumbProps {
 
 export default function Breacrumb({ title, page  }: BreacrumbProps) {
   return (
-    <div className="azzle-breadcrumb">
+    <div className="rk-theme-breadcrumb">
       <div className="container">
-        <div className="azzle-breadcrumb-content">
-          <h1 className="azzle-breadcrumb-title" data-aos="fade-up" data-aos-delay="500">{title}</h1>
-          <div className="azzle-breadcrumb-wrapper" data-aos="fade-up" data-aos-delay="700">
-            <div className="azzle-breadcrumb-wrap">
-              <div className="azzle-breadcrumb-menu">
-                <ul>
-                  <li><Link href="/">Home</Link></li>
-                  <li><img src="assets/images/about/arrow-right.png" alt="" /></li>
-                  <li aria-current="page">{page}</li>
-                </ul>
-              </div>
+        <div className="rk-theme-breadcrumb-content">
+          <h1 className="rk-theme-breadcrumb-title" data-aos="fade-up" data-aos-delay="500">{title}</h1>
+          <div className="rk-theme-breadcrumb-wrapper" data-aos="fade-up" data-aos-delay="700">
+            <div className="rk-theme-breadcrumb-wrap rk-theme-breadcrumb-info">
+              <h3>30+ Best Free and Premium React.js <br /> Next.js Vue.js and Nuxt.js Templates for Your Next Projects</h3>
+              <p>Discover a wide range of high-quality Next.js templates for your web projects. Choose from our selection of free, open-source, and premium options to build stunning and functional Next.js websites and web apps effortlessly. Explore a diverse collection of handcrafted and ready-to-use templates and starters to kickstart your next project quickly — built with the latest Next.js, React 18, and TypeScript for optimal performance and ease of use.</p>               
             </div>
           </div>
         </div>

@@ -6583,49 +6583,49 @@ textarea {
   transition: all 0.4s;
 }
 
-.azzle-breadcrumb {
+.rk-theme-breadcrumb {
   text-align: center;
-  padding: 195px 0 130px;
+  padding: 130px 0 130px;
   position: relative;
   transition: all 0.4s;
-  border-radius: 0 0 50px 50px;
-  background-color: var(--light-color2);
+  /* border-radius: 0 0 50px 50px; */
+  background-color: #dfdfdf;
 }
 @media (max-width: 1199px) {
-  .azzle-breadcrumb {
-    padding: 180px 0 100px;
-    border-radius: 0 0 30px 30px;
+  .rk-theme-breadcrumb {
+    padding: 100px 0 100px;
+    /* border-radius: 0 0 30px 30px; */
   }
 }
 @media (max-width: 767px) {
-  .azzle-breadcrumb {
-    padding: 150px 0 80px;
-    border-radius: 0 0 15px 15px;
+  .rk-theme-breadcrumb {
+    padding: 80px 0 80px;
+    /* border-radius: 0 0 15px 15px; */
   }
 }
 @media (max-width: 767px) {
-  .azzle-breadcrumb {
-    padding: 120px 0 60px;
+  .rk-theme-breadcrumb {
+    padding: 60px 0 60px;
   }
 }
-.azzle-breadcrumb-content {
+.rk-theme-breadcrumb-content {
   text-align: center;
   margin: 0 auto;
 }
-.azzle-breadcrumb-title {
+.rk-theme-breadcrumb-title {
   margin-bottom: 50px;
 }
 @media (max-width: 1199px) {
-  .azzle-breadcrumb-title {
+  .rk-theme-breadcrumb-title {
     margin-bottom: 35px;
   }
 }
 @media (max-width: 767px) {
-  .azzle-breadcrumb-title {
+  .rk-theme-breadcrumb-title {
     margin-bottom: 24px;
   }
 }
-.azzle-breadcrumb-menu ul li {
+.rk-theme-breadcrumb-menu ul li {
   font-weight: 600;
   line-height: 32px;
   display: inline-block;
@@ -6633,21 +6633,21 @@ textarea {
   color: var(--light-color);
 }
 @media (max-width: 479px) {
-  .azzle-breadcrumb-menu ul li {
+  .rk-theme-breadcrumb-menu ul li {
     font-size: 18px;
   }
 }
-.azzle-breadcrumb-menu ul li a {
+.rk-theme-breadcrumb-menu ul li a {
   color: var(--heading-color);
 }
-.azzle-breadcrumb-menu ul li:last-child {
+.rk-theme-breadcrumb-menu ul li:last-child {
   color: var(--accent-color);
 }
-.azzle-breadcrumb-menu-wrap {
+.rk-theme-breadcrumb-menu-wrap {
   padding-top: 50px;
 }
 @media (max-width: 1199px) {
-  .azzle-breadcrumb-menu-wrap {
+  .rk-theme-breadcrumb-menu-wrap {
     padding-top: 30px;
   }
 }

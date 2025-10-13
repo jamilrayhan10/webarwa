@@ -120,6 +120,32 @@
   color:  #000
 }
 
+
+
+
+/* breadcrumb */
+.rk-theme-breadcrumb-info h3{
+  font-size: clamp(14px, 5vw, 30px);
+  font-family: "Outfit";
+  font-weight: 500;
+  padding-bottom: 14px;
+}
+.rk-theme-breadcrumb-info p{
+  font-size: 16px;
+  color: #616161; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer section */
 .rk-theme-footer-bottom-text2 p{
   font-size: 14px;
