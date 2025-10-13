@@ -1,0 +1,131 @@
+ 
+
+/* hero section */
+.rk-theme-section h1.rk-title {
+  font-family: "Outfit";
+  margin-bottom: 24px;
+  font-size: clamp(28px, 5vw, 50px);
+}
+ 
+.rk-theme-hero p{
+  color: #d1cdcd;
+  text-align: center;
+}
+ 
+.rk-theme-default-btn{ 
+    border: 1px solid #e2dfdf;
+    background-color: transparent !important;
+
+}
+
+/* why choose section */
+.rk-theme-section-title h2{
+  font-size: clamp(28px, 5vw, 50px); 
+  padding-bottom: 24px;
+  font-family: "Outfit";
+
+}
+
+/* features tetmplate section */
+.rk-theme-template {
+  margin-top: 30px;
+}
+.rk-theme-template p{
+  font-size: clamp(12px, 5vw, 14px);
+  color: #575656;
+  line-height: 24px;
+
+}
+
+.rk-theme-template-btn-area{
+  padding-bottom: 30px;
+}
+
+ 
+.rk-theme-template-btn button{
+  border: 1px solid var(--variable-color1); 
+  padding: 8px 30px;
+  margin-right: 10px;
+  border-radius: 30px;
+
+}
+.rk-theme-template-btn a{
+  color: #000;
+
+}
+
+.rk-theme-btn-area{
+  font-size: 16px; 
+  display: flex; 
+  justify-content: space-around; 
+
+}
+.rk-theme-btn-area a{
+   color: #202020;
+}
+ 
+.rk-theme-template-btn button.active{
+  background-color: #000; 
+}
+ 
+
+
+.rk-theme-template-btn .active a{ 
+  color: #fff;
+
+}
+.rk-theme-template-btn  a{ 
+  font-size: 16px;
+
+}
+
+
+/* preview  download btn */
+.rk-theme-btn-area .preview-btn{
+  border-top: 1px solid var(--variable-color1);
+  text-align: center;
+  width: 50%; 
+   padding: 8px 0;  
+
+}
+.rk-theme-btn-area .download-btn{
+  border-top: 1px solid var(--variable-color1);
+  border-left: 1px solid var(--variable-color1);
+  text-align: center;
+  width: 50%; 
+  padding: 8px 0; 
+
+}
+
+.rk-theme-features-area{
+  background-color: #f8f8f8;
+}
+
+/* blog section */
+.rk-theme-blog h3.entry-title{
+  font-size: clamp(14px, 5vw, 20px);
+  font-family: "Outfit";
+  font-weight: 500;
+
+}
+.rk-theme-blog p{
+  font-size: clamp(12px, 5vw, 14px);
+  color: #7e7e7e;
+  line-height: 24px;
+}
+
+/* 404 */
+
+.rk-theme-btn{
+  color:  #000
+}
+
+/* footer section */
+.rk-theme-footer-bottom-text2 p{
+  font-size: 14px;
+  color: #d1cdcd;
+}
+.top-line{
+  border-top: 1px solid var(--variable-color1);
+  opacity: .5;
+}
