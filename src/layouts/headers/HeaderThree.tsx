@@ -7,13 +7,13 @@ import { useState } from "react";
 
 
 export default function HeaderThree() {
-  const { hidden, sticky } = UseSticky();
+  const {  sticky } = UseSticky();
   const [isOpen, setIsOpen] = useState(false);
 
 
   return (
     <>
-      <header className={`site-header azzle-header-section ${sticky ? "sticky-menu" : ""} ${hidden ? "hide-header" : ""}`} id="sticky-menu">
+      <header className={`site-header azzle-header-section ${sticky ? "sticky-menu" : ""}`} id="sticky-menu">
         <div className="container">
           <div className="row gx-3 align-items-center justify-content-between">
             <div className="col-8 col-sm-auto ">

@@ -47,7 +47,7 @@ export default function MobileMenu({ setIsOpen, isOpen }: MobileMenuProps) {
               {menu_data.map((item, i) => (
                 <li key={i} className={`${item.title === navTitle ? 'azzle-active' : ''} ${item.has_submenu ? 'menu-item-has-children azzle-item-has-children' : ''}`}>
                   <Link href={item.path}>{item.title}{item.has_submenu && <span className="azzle-mean-expand" onClick={() => openMobileMenu(item.title)}></span>}</Link>
-                  {item.has_submenu &&
+                  {/* {item.has_submenu &&
                     <ul className={`sub-menu azzle-submenu ${item.title === navTitle ? 'azzle-open' : ''}`} style={{ display: navTitle === item.title ? "block" : "none", }}>
                       {item.sub_menus?.map((sub_item, index) => (
                         <li key={index} className={`${sub_item.title === navTitle2 ? 'azzle-active' : ''} ${sub_item.has_inner_submenu ? 'menu-item-has-children azzle-item-has-children' : ''}`}>
@@ -66,7 +66,7 @@ export default function MobileMenu({ setIsOpen, isOpen }: MobileMenuProps) {
                         </li>
                       ))}
                     </ul>
-                  }
+                  } */}
                 </li>
               ))}
             </ul>

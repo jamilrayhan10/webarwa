@@ -12,7 +12,7 @@ export default function Navmenu({ menu_style = false }: NavmenuProps) {
       {menu_data.map((item, i) => (
         <li key={i} className={`${item.has_submenu ? "menu-item-has-children" : ""}`}>
           <Link href={item.path} className={`${menu_style ? "light-color" : ""}`}>{item.title}</Link>
-          {item.has_submenu &&
+          {/* {item.has_submenu &&
             <ul className="sub-menu">
               {item.sub_menus?.map((sub_item, index) => (
                 <li key={index} className={`${sub_item.has_inner_submenu ? "menu-item-has-children" : ""}`}>
@@ -27,7 +27,7 @@ export default function Navmenu({ menu_style = false }: NavmenuProps) {
                 </li>
               ))}
             </ul>
-          }
+          } */}
         </li>
       ))}
     </ul>
