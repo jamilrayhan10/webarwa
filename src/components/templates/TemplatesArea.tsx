@@ -46,7 +46,7 @@ export default function TemplatesArea() {
                           </Link>
                         </div>
                         <div className="download-btn">
-                          <Link href="/templates">
+                          <Link href={item.purchase_link}>
                             Download
                           </Link>
                         </div>
