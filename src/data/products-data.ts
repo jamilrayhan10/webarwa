@@ -3,6 +3,7 @@ const products_data = [
   {
     id: 1,
     title: "Affan – PWA Mobile React Next js Template",
+    purchase_link: "https://webarwa.lemonsqueezy.com/buy/60b6938b-b16f-4e40-9b11-b9061c563b6f",
     live_link: "https://affan-nextjs.vercel.app/",
     thumb: "https://i.ibb.co/rLpJjKQ/preview.png",
     descriptions: [
@@ -63,6 +64,7 @@ const products_data = [
   {
     id: 2,
     title: "Suha - PWA Ecommerce Next js Template",
+    purchase_link: "https://webarwa.lemonsqueezy.com/buy/60b6938b-b16f-4e40-9b11-b9061c563b6f",
     live_link: "https://suha-nextjs.vercel.app/",
     thumb: "https://i.ibb.co/F45Vkc1d/preview.png",
     descriptions: [
@@ -123,6 +125,7 @@ const products_data = [
   {
     id: 3,
     title: "Travgo - Travel Mobile App Next js Template",
+    purchase_link: "https://webarwa.lemonsqueezy.com/buy/60b6938b-b16f-4e40-9b11-b9061c563b6f",
     live_link: "https://travgo-nextjs.vercel.app/",
     thumb: "https://i.ibb.co/kswMgY6d/01-Preview.jpg",
     descriptions: [
@@ -183,6 +186,7 @@ const products_data = [
   {
     id: 4,
     title: "Vixan - Digital Creative Agency Next js Template",
+    purchase_link: "https://webarwa.lemonsqueezy.com/buy/60b6938b-b16f-4e40-9b11-b9061c563b6f",
     live_link: "https://vixan-next-gsap.vercel.app/",
     thumb: "https://i.ibb.co/LzG7P8RV/00-Preview.jpg",
     descriptions: [
@@ -243,6 +247,7 @@ const products_data = [
   {
     id: 5,
     title: "Lumara - Creative Branding Agency React JS Template",
+    purchase_link: "https://webarwa.lemonsqueezy.com/buy/60b6938b-b16f-4e40-9b11-b9061c563b6f",
     live_link: "https://lumara-reactjs.vercel.app/",
     thumb: "https://i.ibb.co/ZR7NYFNt/prev.png",
     descriptions: [
@@ -303,6 +308,7 @@ const products_data = [
   {
     id: 6,
     title: "Zenith AI - AI Startup & Technology React JS Template",
+    purchase_link: "https://webarwa.lemonsqueezy.com/buy/60b6938b-b16f-4e40-9b11-b9061c563b6f",
     live_link: "https://zenith-reactjs.vercel.app/",
     thumb: "https://i.ibb.co/sdXyw86Q/prev.png",
     descriptions: [
@@ -363,6 +369,7 @@ const products_data = [
   {
     id: 7,
     title: "PackPro - Transportation & Logistics Next JS Template",
+    purchase_link: "https://webarwa.lemonsqueezy.com/buy/60b6938b-b16f-4e40-9b11-b9061c563b6f",
     live_link: "https://packpro-nextjs.vercel.app/",
     thumb: "https://i.ibb.co/BHGPG6Y2/prev.png",
     descriptions: [
@@ -423,6 +430,7 @@ const products_data = [
   {
     id: 1,
     title: "Affan – PWA Mobile App React js Template",
+    purchase_link: "https://webarwa.lemonsqueezy.com/buy/60b6938b-b16f-4e40-9b11-b9061c563b6f",
     live_link: "https://affan-reactjs.vercel.app/",
     thumb: "https://i.ibb.co/rLpJjKQ/preview.png",
     descriptions: [
