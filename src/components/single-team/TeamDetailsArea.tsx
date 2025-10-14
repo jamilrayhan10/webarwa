@@ -5,7 +5,7 @@ export default function TeamDetailsArea() {
   return (
     <div className="rk-theme-section-padding6 overflow-hidden">
       <div className="container">
-        <div className="azzle-single-team-top">
+        <div className="rk-theme-single-team-top">
           <div className="row">
             <div className="col-lg-7 d-flex align-items-center">
               <div className="rk-theme-default-content responsive-mb-40" data-aos="fade-up" data-aos-delay="700">
@@ -16,20 +16,20 @@ export default function TeamDetailsArea() {
               </div>
             </div>
             <div className="col-lg-4 offset-lg-1">
-              <div className="azzle-team-wrap wrap2 m-0" data-aos="fade-left" data-aos-delay="700">
+              <div className="rk-theme-team-wrap wrap2 m-0" data-aos="fade-left" data-aos-delay="700">
                 <Link href="/single-team">
-                  <div className="azzle-team-thumb">
+                  <div className="rk-theme-team-thumb">
                     <img src="assets/images/team/team8.png" alt="Thumb" />
                   </div>
-                  <div className="azzle-team-content">
+                  <div className="rk-theme-team-content">
                     <h3>Homi Corn</h3>
                   </div>
                 </Link>
-                <div className="azzle-team-author-wrap">
-                  <div className="azzle-team-author-data">
+                <div className="rk-theme-team-author-wrap">
+                  <div className="rk-theme-team-author-data">
                     <p>HR Manager</p>
                   </div>
-                  <div className="azzle-social-wrap2 social-hover-orange">
+                  <div className="rk-theme-social-wrap2 social-hover-orange">
                     <ul>
                       <li>
                         <a href="https://www.facebook.com">
@@ -58,28 +58,28 @@ export default function TeamDetailsArea() {
             </div>
           </div>
         </div>
-        <div className="azzle-single-team-bottom">
-          <div className="azzle-single-content" data-aos="fade-up" data-aos-delay="500">
+        <div className="rk-theme-single-team-bottom">
+          <div className="rk-theme-single-content" data-aos="fade-up" data-aos-delay="500">
             <h3>1. AI Strategy:</h3>
             <p>The CAIO plays a pivotal role in shaping the organization's AI strategy. They work closely with senior leadership.</p>
           </div>
-          <div className="azzle-single-content" data-aos="fade-up" data-aos-delay="700">
+          <div className="rk-theme-single-content" data-aos="fade-up" data-aos-delay="700">
             <h3>2. Technology Evaluation:</h3>
             <p>He assess emerging AI technologies, tools, and platforms to determine which ones are suitable for the organization.</p>
           </div>
-          <div className="azzle-single-content" data-aos="fade-up" data-aos-delay="900">
+          <div className="rk-theme-single-content" data-aos="fade-up" data-aos-delay="900">
             <h3>3. AI Project Oversight:</h3>
             <p>The CAIO oversees the planning and execution of AI & ML projects throughout the organization.</p>
           </div>
-          <div className="azzle-single-content" data-aos="fade-up" data-aos-delay="1100">
+          <div className="rk-theme-single-content" data-aos="fade-up" data-aos-delay="1100">
             <h3>4. Data Management:</h3>
             <p>Data is a critical component of AI, and the CAIO often manages the organization's data strategy.</p>
           </div>
-          <div className="azzle-single-content" data-aos="fade-up" data-aos-delay="1300">
+          <div className="rk-theme-single-content" data-aos="fade-up" data-aos-delay="1300">
             <h3>5. Risk Management:</h3>
             <p>He is also responsible for identifying and mitigating AI-related risks, including also ethical considerations</p>
           </div>
-          <div className="azzle-single-content" data-aos="fade-up" data-aos-delay="1500">
+          <div className="rk-theme-single-content" data-aos="fade-up" data-aos-delay="1500">
             <h3>6. Innovation:</h3>
             <p>The CAIO fosters a culture of innovation by encouraging experimentation with AI technologies, promoting research.</p>
           </div>

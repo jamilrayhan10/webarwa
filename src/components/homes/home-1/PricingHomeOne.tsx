@@ -7,7 +7,7 @@ export default function PricingHomeOne() {
 
   return (
     <div className="rk-theme-section-padding2 position-r">
-      <div className="azzle-pricing-shape">
+      <div className="rk-theme-pricing-shape">
         <img src="assets/images/home1/pricing-shape.png" alt="bg" />
       </div>
       <div className="container">
@@ -17,7 +17,7 @@ export default function PricingHomeOne() {
           data-aos-delay="500"
         >
           <h2>Cost-effectively build any software</h2>
-          <div className="azzle-title-pricing-btn mt-50">
+          <div className="rk-theme-title-pricing-btn mt-50">
             <label htmlFor="toggle" className="toggle-switch">
               <input
                 className="toggle-button"
@@ -36,32 +36,32 @@ export default function PricingHomeOne() {
           {/* Beginner */}
           <div className="col-xl-4 col-md-6">
             <div
-              className="azzle-pricing-wrap"
+              className="rk-theme-pricing-wrap"
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <div className="azzle-pricing-header">
+              <div className="rk-theme-pricing-header">
                 <h3>Beginner</h3>
                 <p>Up to 10 members</p>
               </div>
               {isMonthly ? (
-                <div className="azzle-pricing-price">
+                <div className="rk-theme-pricing-price">
                   <h2>$50</h2>
                   <span>/Per Year</span>
                 </div>
               ) : (
-                <div className="azzle-pricing-price">
+                <div className="rk-theme-pricing-price">
                   <h2>$25</h2>
                   <span>/Per Month</span>
                 </div>
               )}
-              <div className="azzle-pricing-body">
+              <div className="rk-theme-pricing-body">
                 <p>
                   This is an excellent option for people & small businesses who
                   are starting out.
                 </p>
               </div>
-              <div className="azzle-pricing-footer mt-50">
+              <div className="rk-theme-pricing-footer mt-50">
                 <Link
                   className="rk-theme-default-btn d-block outline-btn"
                   href="/contact-us"
@@ -75,32 +75,32 @@ export default function PricingHomeOne() {
           {/* Starter */}
           <div className="col-xl-4 col-md-6">
             <div
-              className="azzle-pricing-wrap active"
+              className="rk-theme-pricing-wrap active"
               data-aos="fade-up"
               data-aos-delay="700"
             >
-              <div className="azzle-pricing-header">
+              <div className="rk-theme-pricing-header">
                 <h3>Starter</h3>
                 <p>Up to 50 members</p>
               </div>
               {isMonthly ? (
-                <div className="azzle-pricing-price">
+                <div className="rk-theme-pricing-price">
                   <h2>$169</h2>
                   <span>/Per Year</span>
                 </div>
               ) : (
-                <div className="azzle-pricing-price">
+                <div className="rk-theme-pricing-price">
                   <h2>$89</h2>
                   <span>/Per Month</span>
                 </div>
               )}
-              <div className="azzle-pricing-body">
+              <div className="rk-theme-pricing-body">
                 <p>
                   This plan is suitable for e-commerce stores as well as
                   professional blogs.
                 </p>
               </div>
-              <div className="azzle-pricing-footer mt-50">
+              <div className="rk-theme-pricing-footer mt-50">
                 <Link
                   className="rk-theme-default-btn d-block outline-btn btn2"
                   href="/contact-us"
@@ -114,32 +114,32 @@ export default function PricingHomeOne() {
           {/* Pro */}
           <div className="col-xl-4 col-md-6">
             <div
-              className="azzle-pricing-wrap"
+              className="rk-theme-pricing-wrap"
               data-aos="fade-up"
               data-aos-delay="900"
             >
-              <div className="azzle-pricing-header">
+              <div className="rk-theme-pricing-header">
                 <h3>Pro</h3>
                 <p>Up to 100 members</p>
               </div>
               {isMonthly ? (
-                <div className="azzle-pricing-price">
+                <div className="rk-theme-pricing-price">
                   <h2>$299</h2>
                   <span>/Per Year</span>
                 </div>
               ) : (
-                <div className="azzle-pricing-price">
+                <div className="rk-theme-pricing-price">
                   <h2>$199</h2>
                   <span>/Per Month</span>
                 </div>
               )}
-              <div className="azzle-pricing-body">
+              <div className="rk-theme-pricing-body">
                 <p>
                   Ideal for handling complicated projects, enterprise-level
                   projects, and websites.
                 </p>
               </div>
-              <div className="azzle-pricing-footer mt-50">
+              <div className="rk-theme-pricing-footer mt-50">
                 <Link
                   className="rk-theme-default-btn d-block outline-btn"
                   href="/contact-us"

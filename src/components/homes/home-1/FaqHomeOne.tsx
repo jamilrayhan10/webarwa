@@ -85,24 +85,24 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
           {/* FAQ items */}
           <div className="col-lg-5 offset-lg-1">
             <div
-              className="azzle-faq-wrap1"
+              className="rk-theme-faq-wrap1"
               data-aos="fade-up"
               data-aos-delay="700"
             >
               {faq_data.map((faq) => (
                 <div
                   key={faq.id}
-                  className={`azzle-faq-item ${
+                  className={`rk-theme-faq-item ${
                     activeId === faq.id ? "open" : ""
                   }`}
                 >
                   <div
-                    className="azzle-faq-header"
+                    className="rk-theme-faq-header"
                     onClick={() => toggleFaq(faq.id)}
                     style={{ cursor: "pointer" }}
                   >
                     <h3>{faq.question}</h3>
-                    <div className="azzle-active-icon">
+                    <div className="rk-theme-active-icon">
                       <img
                         src="assets/images/home1/+.svg"
                         alt="toggle"
@@ -115,7 +115,7 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
                     </div>
                   </div>
                   {activeId === faq.id && (
-                    <div className="azzle-faq-body">
+                    <div className="rk-theme-faq-body">
                       <p>{faq.answer}</p>
                     </div>
                   )}

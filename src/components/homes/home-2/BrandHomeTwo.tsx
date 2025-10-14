@@ -68,7 +68,7 @@ export default function BrandHomeTwo() {
             <div className="rk-theme-default-content content2 content3 pr-110" data-aos="fade-up" data-aos-delay="500">
               <h2>Integrates your favorite channels</h2>
               <p>The ability to integrate AI chatbots into multiple channels enables businesses to meet users where they are, providing a consistent and convenient experience across various touchpoints. </p>
-              <div className="azzle-listicon-wrap2 mt-50">
+              <div className="rk-theme-listicon-wrap2 mt-50">
                 <ul>
                   <li>
                     <h3>It preferred all communication channels</h3>
@@ -87,69 +87,69 @@ export default function BrandHomeTwo() {
             </div>
           </div>
           <div className="col-lg-5">
-            <div className="azzle-int-slider-wraper" data-aos="fade-up" data-aos-delay="700">
-              <Slider {...settings} className="azzle-int-slider-init">
-                <div className="azzle-int-slider-item">
+            <div className="rk-theme-int-slider-wraper" data-aos="fade-up" data-aos-delay="700">
+              <Slider {...settings} className="rk-theme-int-slider-init">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/2.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/3.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/4.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/5.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/2.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/3.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/4.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/5.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/2.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/3.svg" alt="Icon" />
                 </div>
               </Slider>
-              <Slider {...settings2} className="azzle-int-slider-init">
-                <div className="azzle-int-slider-item">
+              <Slider {...settings2} className="rk-theme-int-slider-init">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/8.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/9.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/10.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/8.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/9.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/10.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/8.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/9.svg" alt="Icon" />
                 </div>
-                <div className="azzle-int-slider-item">
+                <div className="rk-theme-int-slider-item">
                   <img src="assets/images/home2/10.svg" alt="Icon" />
                 </div>
               </Slider>
-              <div className="azzle-int-bg">
+              <div className="rk-theme-int-bg">
                 <img src="assets/images/home2/shape1.png" alt="shape" />
               </div>
             </div>

@@ -20,7 +20,7 @@ export default function PricingArea() {
           data-aos="fade-up"
           data-aos-delay="500"
         >
-          <div className="azzle-title-pricing-btn">
+          <div className="rk-theme-title-pricing-btn">
             <label htmlFor="toggle" className="toggle-switch">
               <input
                 className="toggle-button"
@@ -38,37 +38,37 @@ export default function PricingArea() {
         <div className="row">
           {/* Free */}
           <div className="col-xxl-3 col-md-6">
-            <div className="azzle-pricing-column">
+            <div className="rk-theme-pricing-column">
               <div
-                className="azzle-pricing-wrap wrap2"
+                className="rk-theme-pricing-wrap wrap2"
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                <div className="azzle-pricing-top">
-                  <div className="azzle-pricing-header">
+                <div className="rk-theme-pricing-top">
+                  <div className="rk-theme-pricing-header">
                     <h3>Free</h3>
                     <p>1 member</p>
                   </div>
 
                   {isYearly ? (
-                    <div className="azzle-pricing-price">
+                    <div className="rk-theme-pricing-price">
                       <h2>$20</h2>
                       <span>/Per Year</span>
                     </div>
                   ) : (
-                    <div className="azzle-pricing-price">
+                    <div className="rk-theme-pricing-price">
                       <h2>$0</h2>
                       <span>/Per Month</span>
                     </div>
                   )}
 
-                  <div className="azzle-pricing-body">
+                  <div className="rk-theme-pricing-body">
                     <p>
                       Ideal for individuals person and small businesses just
                       getting started.
                     </p>
                   </div>
-                  <div className="azzle-pricing-feature">
+                  <div className="rk-theme-pricing-feature">
                     <ul>
                       <li>
                         <img
@@ -94,7 +94,7 @@ export default function PricingArea() {
                     </ul>
                   </div>
                 </div>
-                <div className="azzle-pricing-footer mt-50">
+                <div className="rk-theme-pricing-footer mt-50">
                   <Link
                     className="rk-theme-default-btn d-block outline-btn"
                     href="/contact-us"
@@ -108,37 +108,37 @@ export default function PricingArea() {
 
           {/* Beginner */}
           <div className="col-xxl-3 col-md-6">
-            <div className="azzle-pricing-column">
+            <div className="rk-theme-pricing-column">
               <div
-                className="azzle-pricing-wrap wrap2"
+                className="rk-theme-pricing-wrap wrap2"
                 data-aos="fade-up"
                 data-aos-delay="700"
               >
-                <div className="azzle-pricing-top">
-                  <div className="azzle-pricing-header">
+                <div className="rk-theme-pricing-top">
+                  <div className="rk-theme-pricing-header">
                     <h3>Beginner</h3>
                     <p>Up to 50 members</p>
                   </div>
 
                   {isYearly ? (
-                    <div className="azzle-pricing-price">
+                    <div className="rk-theme-pricing-price">
                       <h2>$39</h2>
                       <span>/Per Year</span>
                     </div>
                   ) : (
-                    <div className="azzle-pricing-price">
+                    <div className="rk-theme-pricing-price">
                       <h2>$29</h2>
                       <span>/Per Month</span>
                     </div>
                   )}
 
-                  <div className="azzle-pricing-body">
+                  <div className="rk-theme-pricing-body">
                     <p>
                       This is an excellent option for small businesses who are
                       starting out.
                     </p>
                   </div>
-                  <div className="azzle-pricing-feature">
+                  <div className="rk-theme-pricing-feature">
                     <ul>
                       <li>
                         <img
@@ -171,7 +171,7 @@ export default function PricingArea() {
                     </ul>
                   </div>
                 </div>
-                <div className="azzle-pricing-footer mt-50">
+                <div className="rk-theme-pricing-footer mt-50">
                   <Link
                     className="rk-theme-default-btn d-block outline-btn"
                     href="/contact-us"
@@ -185,37 +185,37 @@ export default function PricingArea() {
 
           {/* Starter */}
           <div className="col-xxl-3 col-md-6">
-            <div className="azzle-pricing-column">
+            <div className="rk-theme-pricing-column">
               <div
-                className="azzle-pricing-wrap wrap2 active"
+                className="rk-theme-pricing-wrap wrap2 active"
                 data-aos="fade-up"
                 data-aos-delay="900"
               >
-                <div className="azzle-pricing-top">
-                  <div className="azzle-pricing-header">
+                <div className="rk-theme-pricing-top">
+                  <div className="rk-theme-pricing-header">
                     <h3>Starter</h3>
                     <p>Up to 100 members</p>
                   </div>
 
                   {isYearly ? (
-                    <div className="azzle-pricing-price">
+                    <div className="rk-theme-pricing-price">
                       <h2>$79</h2>
                       <span>/Per Year</span>
                     </div>
                   ) : (
-                    <div className="azzle-pricing-price">
+                    <div className="rk-theme-pricing-price">
                       <h2>$59</h2>
                       <span>/Per Month</span>
                     </div>
                   )}
 
-                  <div className="azzle-pricing-body">
+                  <div className="rk-theme-pricing-body">
                     <p>
                       This plan is suitable for e-commerce stores as well as
                       professional blogs.
                     </p>
                   </div>
-                  <div className="azzle-pricing-feature">
+                  <div className="rk-theme-pricing-feature">
                     <ul>
                       <li>
                         <img
@@ -255,7 +255,7 @@ export default function PricingArea() {
                     </ul>
                   </div>
                 </div>
-                <div className="azzle-pricing-footer mt-50">
+                <div className="rk-theme-pricing-footer mt-50">
                   <Link
                     className="rk-theme-default-btn d-block outline-btn btn2"
                     href="/contact-us"
@@ -269,37 +269,37 @@ export default function PricingArea() {
 
           {/* Pro */}
           <div className="col-xxl-3 col-md-6">
-            <div className="azzle-pricing-column">
+            <div className="rk-theme-pricing-column">
               <div
-                className="azzle-pricing-wrap wrap2"
+                className="rk-theme-pricing-wrap wrap2"
                 data-aos="fade-up"
                 data-aos-delay="1100"
               >
-                <div className="azzle-pricing-top">
-                  <div className="azzle-pricing-header">
+                <div className="rk-theme-pricing-top">
+                  <div className="rk-theme-pricing-header">
                     <h3>Pro</h3>
                     <p>Up to 150 members</p>
                   </div>
 
                   {isYearly ? (
-                    <div className="azzle-pricing-price">
+                    <div className="rk-theme-pricing-price">
                       <h2>$99</h2>
                       <span>/Per Year</span>
                     </div>
                   ) : (
-                    <div className="azzle-pricing-price">
+                    <div className="rk-theme-pricing-price">
                       <h2>$89</h2>
                       <span>/Per Month</span>
                     </div>
                   )}
 
-                  <div className="azzle-pricing-body">
+                  <div className="rk-theme-pricing-body">
                     <p>
                       Ideal for complex websites, online platforms,
                       enterprise-level projects.
                     </p>
                   </div>
-                  <div className="azzle-pricing-feature">
+                  <div className="rk-theme-pricing-feature">
                     <ul>
                       <li>
                         <img
@@ -346,7 +346,7 @@ export default function PricingArea() {
                     </ul>
                   </div>
                 </div>
-                <div className="azzle-pricing-footer mt-50">
+                <div className="rk-theme-pricing-footer mt-50">
                   <Link
                     className="rk-theme-default-btn d-block outline-btn"
                     href="/contact-us"

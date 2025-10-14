@@ -7,24 +7,24 @@ export default function PortfolioDetailsArea() {
           <div className="rk-theme-section-title max-width-780" data-aos="fade-left" data-aos-delay="500">
             <h2>Natural language processing models</h2>
           </div>
-          <div className="azzle-portfolio-details-top">
-            <div className="azzle-portfolio-details-thumb">
+          <div className="rk-theme-portfolio-details-top">
+            <div className="rk-theme-portfolio-details-thumb">
               <img src="assets/images/portfolio/portfolio-main-img.jpg" alt="Portfolio Thumb" />
             </div>
-            <div className="azzle-portfolio-details-info">
-              <div className="azzle-portfolio-details-item">
+            <div className="rk-theme-portfolio-details-info">
+              <div className="rk-theme-portfolio-details-item">
                 <p>Client:</p>
                 <h3>XYZ Company</h3>
               </div>
-              <div className="azzle-portfolio-details-item">
+              <div className="rk-theme-portfolio-details-item">
                 <p>Services:</p>
                 <h3>Web Design</h3>
               </div>
-              <div className="azzle-portfolio-details-item">
+              <div className="rk-theme-portfolio-details-item">
                 <p>Duration:</p>
                 <h3>2 Weeks</h3>
               </div>
-              <div className="azzle-portfolio-details-item">
+              <div className="rk-theme-portfolio-details-item">
                 <p>Website</p>
                 <a href="#">Live preview <img src="assets/images/portfolio/arrow-right.png" alt="Portfolio Icon" /> </a>
               </div>
@@ -36,10 +36,10 @@ export default function PortfolioDetailsArea() {
 
       <div className="rk-theme-section-pb overflow-hidden">
         <div className="container">
-          <div className="azzle-pb-80">
+          <div className="rk-theme-pb-80">
             <div className="row">
               <div className="col-lg-6">
-                <div className="azzle-content-thumb pr50" data-aos="fade-right" data-aos-delay="500">
+                <div className="rk-theme-content-thumb pr50" data-aos="fade-right" data-aos-delay="500">
                   <img src="assets/images/portfolio/content-image-5.jpg" alt="Thumb" />
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function PortfolioDetailsArea() {
           </div>
           <div className="row">
             <div className="col-lg-6 order-lg-2">
-              <div className="azzle-content-thumb pl50" data-aos="fade-left" data-aos-delay="500">
+              <div className="rk-theme-content-thumb pl50" data-aos="fade-left" data-aos-delay="500">
                 <img src="assets/images/portfolio/content-image-6.jpg" alt="Thumb" />
               </div>
             </div>
@@ -78,11 +78,11 @@ export default function PortfolioDetailsArea() {
       {/* <!-- end content --> */}
 
 
-      <div className="azzle-content-section overflow-hidden">
+      <div className="rk-theme-content-section overflow-hidden">
         <div className="container">
           <div className="row gx-5">
             <div className="col-lg-5">
-              <div className="azzle-content-thumb" data-aos="fade-right" data-aos-delay="500">
+              <div className="rk-theme-content-thumb" data-aos="fade-right" data-aos-delay="500">
                 <img src="assets/images/about/image-3.png" alt="Thumb" />
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function PortfolioDetailsArea() {
                 <p>AI accessible and beneficial for organizations, and we look forward to partnering with businesses to achieve their AI goals.</p>
 
                 <div className="mt-50">
-                  <div className="azzle-contact-info">
+                  <div className="rk-theme-contact-info">
                     <ul>
                       <li>Website:<a href="">www.example.com</a></li>
                       <li>Email:<a href="">info@example.com</a></li>

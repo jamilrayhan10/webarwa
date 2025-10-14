@@ -80,16 +80,16 @@ export default function FaqArea() {
         <div className="rk-theme-section-title center max-width-950" data-aos="fade-up" data-aos-delay="500">
           <h2>Our experts are able to answer all your questions</h2>
         </div>
-        <div className="azzle-faq-wrap1 faq-page" data-aos="fade-up" data-aos-delay="700">
+        <div className="rk-theme-faq-wrap1 faq-page" data-aos="fade-up" data-aos-delay="700">
           {faq_data.map((item, i) => (
-            <div key={i} className={`azzle-faq-item ${openIndex === i ? 'open' : ''}`}>
-              <div className="azzle-faq-header" onClick={() => toggleAccordion(i)}>
+            <div key={i} className={`rk-theme-faq-item ${openIndex === i ? 'open' : ''}`}>
+              <div className="rk-theme-faq-header" onClick={() => toggleAccordion(i)}>
                 <h3>{item.question}</h3>
-                <div className="azzle-active-icon">
+                <div className="rk-theme-active-icon">
                   <img src="assets/images/home1/+.svg" alt="plas" />
                 </div>
               </div>
-              <div className="azzle-faq-body" style={{ display: openIndex === i ? 'block' : 'none' }}>
+              <div className="rk-theme-faq-body" style={{ display: openIndex === i ? 'block' : 'none' }}>
                 <p>{item.answer}</p>
               </div>
             </div>

@@ -11,21 +11,21 @@ export default function TeamHomeThree() {
         </div>
         <div className="row">
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-team-wrap" data-aos="fade-up" data-aos-delay="500">
+            <div className="rk-theme-team-wrap" data-aos="fade-up" data-aos-delay="500">
               <Link href="/single-team">
-                <div className="azzle-team-thumb">
+                <div className="rk-theme-team-thumb">
                   <img src="assets/images/team/team1.png" alt="Thumb" />
                 </div>
-                <div className="azzle-team-content">
+                <div className="rk-theme-team-content">
                   <h3>Mr. Abraham Maslo</h3>
                 </div>
               </Link>
 
-              <div className="azzle-team-author-wrap">
-                <div className="azzle-team-author-data">
+              <div className="rk-theme-team-author-wrap">
+                <div className="rk-theme-team-author-data">
                   <p>Chief AI Officer</p>
                 </div>
-                <div className="azzle-social-wrap2">
+                <div className="rk-theme-social-wrap2">
                   <ul>
                     <li>
                       <a href="https://www.facebook.com">
@@ -53,21 +53,21 @@ export default function TeamHomeThree() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-team-wrap" data-aos="fade-up" data-aos-delay="700">
+            <div className="rk-theme-team-wrap" data-aos="fade-up" data-aos-delay="700">
               <Link href="/single-team">
-                <div className="azzle-team-thumb">
+                <div className="rk-theme-team-thumb">
                   <img src="assets/images/team/team2.png" alt="Thumb" />
                 </div>
-                <div className="azzle-team-content">
+                <div className="rk-theme-team-content">
                   <h3>Willium Robert</h3>
                 </div>
               </Link>
 
-              <div className="azzle-team-author-wrap">
-                <div className="azzle-team-author-data">
+              <div className="rk-theme-team-author-wrap">
+                <div className="rk-theme-team-author-data">
                   <p>Data Engineer</p>
                 </div>
-                <div className="azzle-social-wrap2">
+                <div className="rk-theme-social-wrap2">
                   <ul>
                     <li>
                       <a href="https://www.facebook.com">
@@ -95,21 +95,21 @@ export default function TeamHomeThree() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-team-wrap" data-aos="fade-up" data-aos-delay="900">
+            <div className="rk-theme-team-wrap" data-aos="fade-up" data-aos-delay="900">
               <Link href="/single-team">
-                <div className="azzle-team-thumb">
+                <div className="rk-theme-team-thumb">
                   <img src="assets/images/team/team3.png" alt="Thumb" />
                 </div>
-                <div className="azzle-team-content">
+                <div className="rk-theme-team-content">
                   <h3>Henry Fayol</h3>
                 </div>
               </Link>
 
-              <div className="azzle-team-author-wrap">
-                <div className="azzle-team-author-data">
+              <div className="rk-theme-team-author-wrap">
+                <div className="rk-theme-team-author-data">
                   <p>Research Scientist</p>
                 </div>
-                <div className="azzle-social-wrap2">
+                <div className="rk-theme-social-wrap2">
                   <ul>
                     <li>
                       <a href="https://www.facebook.com">

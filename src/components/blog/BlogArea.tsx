@@ -150,7 +150,7 @@ export default function BlogArea() {
             </div>
 
             {/* <!-- navigation --> */}
-            <div className="azzle-navigation">
+            <div className="rk-theme-navigation">
               <nav className="navigation pagination" aria-label="Posts">
                 <div className="nav-links">
                   <span aria-current="page" className="page-numbers current">1</span>
@@ -183,7 +183,7 @@ export default function BlogArea() {
                   <li><a href="#">Uncategorized</a></li>
                 </ul>
               </div>
-              <div className="widget azzle_recent_posts_Widget">
+              <div className="widget rk-theme_recent_posts_Widget">
                 <h3 className="wp-block-heading">Recent Posts:</h3>
                 <Link className="post-item" href="/single-blog">
                   <div className="post-thumb">
@@ -235,9 +235,9 @@ export default function BlogArea() {
                 <h3 className="wp-block-heading">Subscribe</h3>
                 <p>Subscribe to our newsletter and get the latest news updates lifetime</p>
                 <form action="#">
-                  <div className="azzle-blog-subscriber">
+                  <div className="rk-theme-blog-subscriber">
                     <input type="email" placeholder="Enter your email address" />
-                    <button id="azzle-blog-subscribe" type="button">Subscribe Now</button>
+                    <button id="rk-theme-blog-subscribe" type="button">Subscribe Now</button>
                   </div>
                 </form>
               </div>

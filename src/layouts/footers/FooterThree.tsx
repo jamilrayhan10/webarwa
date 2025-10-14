@@ -9,12 +9,12 @@ export default function FooterThree() {
         <div className="rk-theme-footer-top3">
           <div className="row">
             <div className="col-lg-6">
-              <div className="azzle-cta-title3" data-aos="fade-up" data-aos-delay="500">
+              <div className="rk-theme-cta-title3" data-aos="fade-up" data-aos-delay="500">
                 <h1>Let’s talk</h1>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="azzle-cta-content3" data-aos="fade-up" data-aos-delay="700">
+              <div className="rk-theme-cta-content3" data-aos="fade-up" data-aos-delay="700">
                 <p>Together, we'll create a tailored plan to ensure your success. We'll breathe life into your brand. We work hand in hand to bring your dreams to fruition."</p>
               </div>
             </div>
@@ -22,7 +22,7 @@ export default function FooterThree() {
         </div>
         <div className="row">
           <div className="col-xl-4 col-lg-6">
-            <div className="azzle-cta-contact-info" data-aos="fade-up" data-aos-delay="500">
+            <div className="rk-theme-cta-contact-info" data-aos="fade-up" data-aos-delay="500">
               <ul>
                 <li>
                   <a href="mailto:name@email.com">example@gmail.com</a>
@@ -31,7 +31,7 @@ export default function FooterThree() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6">
-            <div className="azzle-cta-contact-info" data-aos="fade-up" data-aos-delay="700">
+            <div className="rk-theme-cta-contact-info" data-aos="fade-up" data-aos-delay="700">
               <ul>
                 <li>
                   <a href="tel:123">+088-3457-9210</a>
@@ -40,7 +40,7 @@ export default function FooterThree() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6">
-            <div className="azzle-cta-contact-info info2" data-aos="fade-up" data-aos-delay="700">
+            <div className="rk-theme-cta-contact-info info2" data-aos="fade-up" data-aos-delay="700">
               <ul>
                 <li>
                   4140 Parker Rd. Mexico
@@ -101,7 +101,7 @@ export default function FooterThree() {
             </div>
             <div className="rk-theme-footer-menu2">
               <h4>Socials</h4>
-              <div className="azzle-social-wrap">
+              <div className="rk-theme-social-wrap">
                 <ul>
                   <li>
                     <a className="wrap" href="https://www.facebook.com">

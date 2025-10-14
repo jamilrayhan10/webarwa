@@ -7,7 +7,7 @@ export default function AboutHomeOne() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              <div className="azzle-content-thumb" data-aos="fade-right" data-aos-delay="500">
+              <div className="rk-theme-content-thumb" data-aos="fade-right" data-aos-delay="500">
                 <img src="assets/images/home1/thumb2.png" alt="Thumb" />
               </div>
             </div>
@@ -26,7 +26,7 @@ export default function AboutHomeOne() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5 order-lg-2">
-              <div className="azzle-content-thumb" data-aos="zoom-in" data-aos-delay="500">
+              <div className="rk-theme-content-thumb" data-aos="zoom-in" data-aos-delay="500">
                 <img src="assets/images/home1/thumb1.png" alt="Thumb" />
               </div>
             </div>
@@ -34,7 +34,7 @@ export default function AboutHomeOne() {
               <div className="rk-theme-default-content pr-110" data-aos="fade-up" data-aos-delay="700">
                 <h2>Providing quick deploy solutions</h2>
                 <p className="mb-0">Our AI SaaS solutions can be quickly deployed, enabling users to start benefiting from AI capabilities without lengthy setup and development times in fast-paced industries.</p>
-                <div className="azzle-listicon-wrap mt-50">
+                <div className="rk-theme-listicon-wrap mt-50">
                   <ul>
                     <li>
                       <img src="assets/images/home1/arrow.svg" alt="Icon" />

@@ -6,7 +6,7 @@ export default function SolutionsArea() {
       <div className="container">
         <div className="row">
           <div className="col-lg-5 order-lg-2">
-            <div className="azzle-content-thumb" data-aos="zoom-in" data-aos-delay="500">
+            <div className="rk-theme-content-thumb" data-aos="zoom-in" data-aos-delay="500">
               <img src="assets/images/about/about-image.png" alt="Thumb" />
             </div>
           </div>

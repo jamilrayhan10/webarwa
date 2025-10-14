@@ -57,7 +57,7 @@ export default function FooterOne() {
         onMouseLeave={() => setIsPaused(false)}
       >
         <div
-          className="azzle-cta-slider-init flex"
+          className="rk-theme-cta-slider-init flex"
           ref={containerRef}
           style={{
             display: "inline-flex",
@@ -66,9 +66,9 @@ export default function FooterOne() {
           }}
         >
           {ctaItems.map((title, i) => (
-            <div key={i} className="azzle-cta-slider-item flex items-center px-6">
+            <div key={i} className="rk-theme-cta-slider-item flex items-center px-6">
               <img src="assets/images/home1/star.svg" alt="Icon" />
-              <div className="azzle-cta-slider-title">{title}</div>
+              <div className="rk-theme-cta-slider-title">{title}</div>
             </div>
           ))}
         </div>
@@ -125,7 +125,7 @@ export default function FooterOne() {
             <div className="col-xl-3 col-lg-4 col-md-4">
               <div className="rk-theme-footer-menu mb-0">
                 <h4>Subscribe our newsletter</h4>
-                <div className="azzle-subscribe-field">
+                <div className="rk-theme-subscribe-field">
                   <input type="email" placeholder="Enter your email" />
                   <button className="sub-btn" type="submit">
                     <img src="assets/images/home1/arrow-white.svg" alt="Icon" />

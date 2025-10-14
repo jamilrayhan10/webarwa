@@ -9,9 +9,9 @@ export default function AboutHomeTwo() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              <div className="azzle-content-thumb" data-aos="zoom-in" data-aos-delay="500">
+              <div className="rk-theme-content-thumb" data-aos="zoom-in" data-aos-delay="500">
                 <img src="assets/images/home2/thumb1.png" alt="Thumb" />
-                <div className="azzle-content-thumb-bg">
+                <div className="rk-theme-content-thumb-bg">
                   <img src="assets/images/home2/shape2.png" alt="shape" />
                 </div>
               </div>
@@ -20,7 +20,7 @@ export default function AboutHomeTwo() {
               <div className="rk-theme-default-content content3 pl-110" data-aos="fade-up" data-aos-delay="700">
                 <h2>Expression of like human attitude</h2>
                 <p className="mb-0">Our AI chatbots excel at understanding natural language and generating human-like responses. Adapting your conversational style to our chatbot can improve the quality of your interactions.</p>
-                <div className="azzle-listicon-wrap2 mt-50">
+                <div className="rk-theme-listicon-wrap2 mt-50">
                   <ul>
                     <li>
                       <h3>Ready-to-use AI capabilities system</h3>
@@ -44,9 +44,9 @@ export default function AboutHomeTwo() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5 order-lg-2">
-              <div className="azzle-content-thumb" data-aos="fade-up" data-aos-delay="500">
+              <div className="rk-theme-content-thumb" data-aos="fade-up" data-aos-delay="500">
                 <img src="assets/images/home2/thumb3.png" alt="Thumb" />
-                <div className="azzle-content-thumb-bg">
+                <div className="rk-theme-content-thumb-bg">
                   <img src="assets/images/home2/shape3.png" alt="shape" />
                 </div>
               </div>
@@ -55,7 +55,7 @@ export default function AboutHomeTwo() {
               <div className="rk-theme-default-content content3 pr-110" data-aos="fade-up" data-aos-delay="700">
                 <h2>Faster means of communication</h2>
                 <p className="mb-0">This AI chatbot can handle repetitive tasks and also quickly answer frequently asked questions, businesses to save time and resources.</p>
-                <div className="azzle-listicon-wrap2 mt-50">
+                <div className="rk-theme-listicon-wrap2 mt-50">
                   <ul>
                     <li>
                       <h3>Provide instant responses any queries</h3>
@@ -79,9 +79,9 @@ export default function AboutHomeTwo() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              <div className="azzle-content-thumb" data-aos="fade-left" data-aos-delay="500">
+              <div className="rk-theme-content-thumb" data-aos="fade-left" data-aos-delay="500">
                 <img src="assets/images/home2/thumb2.png" alt="Thumb" />
-                <div className="azzle-content-thumb-bg">
+                <div className="rk-theme-content-thumb-bg">
                   <img src="assets/images/home2/shape3.png" alt="shape" />
                 </div>
               </div>

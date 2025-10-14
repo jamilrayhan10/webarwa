@@ -8,7 +8,7 @@ export default function AboutHomeThree() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              <div className="azzle-content-thumb2" data-aos="zoom-in" data-aos-delay="500">
+              <div className="rk-theme-content-thumb2" data-aos="zoom-in" data-aos-delay="500">
                 <img src="assets/images/home3/thumb1.png" alt="Thumb" />
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function AboutHomeThree() {
                   <h3>Data Analysis</h3>
                   <p>AI can analyze large volumes of data quickly and accurately</p>
                 </div>
-                <Link className="rk-theme-iconbox-btn azzle-icon-hover" href="/single-service">
+                <Link className="rk-theme-iconbox-btn rk-theme-icon-hover" href="/single-service">
                   <img className="hover-icon-show" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                   <img className="hover-icon-hide" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                 </Link>
@@ -55,7 +55,7 @@ export default function AboutHomeThree() {
                   <h3>Automation</h3>
                   <p>AI can automate repetitive and time consuming, reducing error</p>
                 </div>
-                <Link className="rk-theme-iconbox-btn azzle-icon-hover" href="/single-service">
+                <Link className="rk-theme-iconbox-btn rk-theme-icon-hover" href="/single-service">
                   <img className="hover-icon-show" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                   <img className="hover-icon-hide" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                 </Link>
@@ -70,7 +70,7 @@ export default function AboutHomeThree() {
                   <h3>Personalization</h3>
                   <p>Businesses to deliver highly personalized high experiences</p>
                 </div>
-                <Link className="rk-theme-iconbox-btn azzle-icon-hover" href="/single-service">
+                <Link className="rk-theme-iconbox-btn rk-theme-icon-hover" href="/single-service">
                   <img className="hover-icon-show" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                   <img className="hover-icon-hide" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                 </Link>
@@ -87,7 +87,7 @@ export default function AboutHomeThree() {
                   <h3>Cost Savings</h3>
                   <p>By automating tasks and optimizing processes, AI can lead to significant cost savings over time</p>
                 </div>
-                <Link className="rk-theme-iconbox-btn azzle-icon-hover" href="/single-service">
+                <Link className="rk-theme-iconbox-btn rk-theme-icon-hover" href="/single-service">
                   <img className="hover-icon-show" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                   <img className="hover-icon-hide" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                 </Link>
@@ -102,7 +102,7 @@ export default function AboutHomeThree() {
                   <h3>Risk Management</h3>
                   <p>AI can assess & mitigate risks more accurately by analyzing vast amounts of data & reduce risks </p>
                 </div>
-                <Link className="rk-theme-iconbox-btn azzle-icon-hover" href="/single-service">
+                <Link className="rk-theme-iconbox-btn rk-theme-icon-hover" href="/single-service">
                   <img className="hover-icon-show" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                   <img className="hover-icon-hide" src="assets/images/home1/arrow-white.svg" alt="Arrow" />
                 </Link>
@@ -117,7 +117,7 @@ export default function AboutHomeThree() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5 order-lg-2">
-              <div className="azzle-content-thumb2" data-aos="fade-left" data-aos-delay="500">
+              <div className="rk-theme-content-thumb2" data-aos="fade-left" data-aos-delay="500">
                 <img src="assets/images/home3/thumb2.png" alt="Thumb" />
               </div>
             </div>

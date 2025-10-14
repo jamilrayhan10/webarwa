@@ -11,9 +11,9 @@ export default function ErrorPage() {
       <HeaderOne />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <div className="azzle-404-section">
+          <div className="rk-theme-404-section">
             <div className="container">
-              <div className="azzle-404-content">
+              <div className="rk-theme-404-content">
                 <img data-aos="fade-up" data-aos-delay="500" src="assets/images/blog/error404.png" alt="404" />
                 <h2 data-aos="fade-up" data-aos-delay="700">The page you are looking for cannot be found</h2>
                 <div className="mt-50">

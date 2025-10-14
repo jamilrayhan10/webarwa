@@ -6,7 +6,7 @@ export default function ServiceInfo() {
       <div className="container">
         <div className="row">
           <div className="col-lg-5 order-lg-2">
-            <div className="azzle-content-thumb" data-aos="zoom-in" data-aos-delay="500">
+            <div className="rk-theme-content-thumb" data-aos="zoom-in" data-aos-delay="500">
               <img src="assets/images/home1/thumb1.png" alt="Thumb" />
             </div>
           </div>
@@ -15,13 +15,13 @@ export default function ServiceInfo() {
               <h2>Manage large amounts of data</h2>
               <p className="mb-0">AI data analysis also can handle vast amounts of data, making it suitable for big data environments. Data analysis can automate many aspects of data processing and analysis</p>
               <div className="mt-50">
-                <div className="azzle-service-box-column">
-                  <div className="azzle-service-box">
+                <div className="rk-theme-service-box-column">
+                  <div className="rk-theme-service-box">
                     <img src="assets/images/service/clock.png" alt="Thumb" />
                     <h3>Real-Time Analysis</h3>
                     <p>Some AI data analysis solutions are design to process making instant.</p>
                   </div>
-                  <div className="azzle-service-box">
+                  <div className="rk-theme-service-box">
                     <img src="assets/images/service/automation.png" alt="Thumb" />
                     <h3>Automation</h3>
                     <p>his leads to increased efficiency and quicker decision-making.</p>

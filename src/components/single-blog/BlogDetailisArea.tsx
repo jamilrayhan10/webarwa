@@ -38,7 +38,7 @@ export default function BlogDetailisArea() {
                 </div>
 
                 <span>Key Takeaways for Founders</span>
-                <ul className="azzle-blog-details-list">
+                <ul className="rk-theme-blog-details-list">
                   <li>Start with chatbots, workflow automation, and basic analytics.</li>
                   <li>Gradually scale AI adoption as the business matures.</li>
                   <li>Identify the right AI use cases to solve pressing needs.</li>
@@ -108,23 +108,23 @@ export default function BlogDetailisArea() {
                 </div>
                 <div className="comment-box">
                   <h3>Leave a comments:</h3>
-                  <div className="azzle-contact-box">
+                  <div className="rk-theme-contact-box">
                     <form action="#">
-                      <div className="azzle-contact-column">
-                        <div className="azzle-contact-field">
+                      <div className="rk-theme-contact-column">
+                        <div className="rk-theme-contact-field">
                           <label>Enter your name</label>
                           <input type="text" placeholder="Adam Smith" />
                         </div>
-                        <div className="azzle-contact-field">
+                        <div className="rk-theme-contact-field">
                           <label>Email address</label>
                           <input type="email" placeholder="example@gmail.com" />
                         </div>
                       </div>
-                      <div className="azzle-contact-field">
+                      <div className="rk-theme-contact-field">
                         <label>Message</label>
                         <textarea name="message" placeholder="Write your message here..."></textarea>
                       </div>
-                      <button id="azzle-main-submit-btn" type="button">Send your message</button>
+                      <button id="rk-theme-main-submit-btn" type="button">Send your message</button>
                     </form>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export default function BlogDetailisArea() {
                   <li><a href="#">Uncategorized</a></li>
                 </ul>
               </div>
-              <div className="widget azzle_recent_posts_Widget">
+              <div className="widget rk-theme_recent_posts_Widget">
                 <h3 className="wp-block-heading">Recent Posts:</h3>
                 <Link className="post-item" href="/single-blog">
                   <div className="post-thumb">
@@ -203,9 +203,9 @@ export default function BlogDetailisArea() {
                 <h3 className="wp-block-heading">Subscribe</h3>
                 <p>Subscribe to our newsletter and get the latest news updates lifetime</p>
                 <form action="#">
-                  <div className="azzle-blog-subscriber">
+                  <div className="rk-theme-blog-subscriber">
                     <input type="email" placeholder="Enter your email address" />
-                    <button id="azzle-blog-subscribe" type="button">Subscribe Now</button>
+                    <button id="rk-theme-blog-subscribe" type="button">Subscribe Now</button>
                   </div>
                 </form>
               </div>

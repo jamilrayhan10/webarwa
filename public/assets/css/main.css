@@ -366,13 +366,13 @@
 .light-color .site-menu-main .nav-link-item {
   color: var(--white-color);
 }
-.azzle-header2 .site-menu-main .nav-link-item {
+.rk-theme-header2 .site-menu-main .nav-link-item {
   color: var(--heading-color2);
 }
-.azzle-header4 .site-menu-main .nav-link-item {
+.rk-theme-header4 .site-menu-main .nav-link-item {
   color: var(--heading-color3);
 }
-.azzle-header5 .site-menu-main .nav-link-item {
+.rk-theme-header5 .site-menu-main .nav-link-item {
   color: var(--light-color4);
 }
 

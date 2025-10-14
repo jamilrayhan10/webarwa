@@ -16,7 +16,7 @@ export default function Contactus() {
         <div id="smooth-content">
           <Breacrumb title="Contact Us" page="Contact Us" />
           <ContactArea />
-          <GoogleMap />          
+          {/* <GoogleMap />           */}
           <FooterTwo />
         </div>
       </div>

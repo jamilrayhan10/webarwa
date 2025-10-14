@@ -19,17 +19,17 @@ export default function FaqHomeTwo() {
           <div className="rk-theme-section-title font-title center max-width-750" data-aos="fade-up" data-aos-delay="500">
             <h2>AI Chatbot FAQs for more information</h2>
           </div>
-          <div className="azzle-faq-wrap1 wrap2">
+          <div className="rk-theme-faq-wrap1 wrap2">
             {faq_data.map((item, i) => (
-              <div key={i} className={`azzle-faq-item item2 ${activeIndex === i ? "open" : ""}`} data-aos="fade-up" data-aos-delay={500 + i * 200}>
-              <div className="azzle-faq-header header2" onClick={() => toggleAccordion(i)}>
+              <div key={i} className={`rk-theme-faq-item item2 ${activeIndex === i ? "open" : ""}`} data-aos="fade-up" data-aos-delay={500 + i * 200}>
+              <div className="rk-theme-faq-header header2" onClick={() => toggleAccordion(i)}>
                 <h3>{item.question}</h3>
-                <div className="azzle-active-icon2">
+                <div className="rk-theme-active-icon2">
                   <img className="plasicon" src="assets/images/home1/+.svg" alt="plas" />
                   <img className="mynusicon" src="assets/images/home2/plas+.svg" alt="plas" />
                 </div>
               </div>
-              <div className="azzle-faq-body body2" style={{ display: activeIndex === i ? "block" : "none" }}>
+              <div className="rk-theme-faq-body body2" style={{ display: activeIndex === i ? "block" : "none" }}>
                 <p>{item.answer}</p>
               </div>
             </div>

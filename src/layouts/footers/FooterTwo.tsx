@@ -6,11 +6,11 @@ export default function FooterTwo() {
       
       
       {/* <div className="rk-theme-footer-top">
-        <div className="azzle-cta-section2">
+        <div className="rk-theme-cta-section2">
           <div className="container">
             <div className="rk-theme-section-title title2 font-title center max-width-780 pb-0" data-aos="fade-up" data-aos-delay="500">
               <h2>Let's get started and enjoy the power of AI</h2>
-              <div className="azzle-subscribe-field2 mt-50">
+              <div className="rk-theme-subscribe-field2 mt-50">
                 <input type="email" placeholder="Enter your email" />
                 <button className="sub-btn2 rk-theme-default-btn btn4" type="submit" data-text="Get Started">
                   <span className="button-wraper">Get Started</span>
@@ -91,7 +91,7 @@ export default function FooterTwo() {
           </div>
           <div className="rk-theme-footer-menu2">
             <h3>Socials</h3>
-            <div className="azzle-social-wrap">
+            <div className="rk-theme-social-wrap">
               <ul>
                 <li>
                   <a className="wrap" href="https://www.facebook.com">

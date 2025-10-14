@@ -11,23 +11,23 @@ export default function BlogHomeTwo() {
         </div>
         <div className="row">
           <div className="col-xl-4 col-md-6">
-            <div className="azzle-blog-wrap" data-aos="fade-up" data-aos-delay="500">
-              <div className="azzle-blog-thumb">
+            <div className="rk-theme-blog-wrap" data-aos="fade-up" data-aos-delay="500">
+              <div className="rk-theme-blog-thumb">
                 <img src="assets/images/blog/blog1.png" alt="thumb" />
               </div>
-              <div className="azzle-blog-content">
+              <div className="rk-theme-blog-content">
                 <Link href="/single-blog">
                   <h3>AI Chatbot: It essential for customer self-service</h3>
                 </Link>
-                <div className="azzle-blog-data-wrap">
-                  <div className="azzle-blog-meta">
+                <div className="rk-theme-blog-data-wrap">
+                  <div className="rk-theme-blog-meta">
                     <ul>
                       <li>
                         <Link href="/single-blog">23 June 2024</Link>
                       </li>
                     </ul>
                   </div>
-                  <Link className="azzle-blog-btn azzle-icon-hover" href="/single-blog">
+                  <Link className="rk-theme-blog-btn rk-theme-icon-hover" href="/single-blog">
                     <img className="hover-icon-show" src="assets/images/blog/arrow.svg" alt="Arrow" />
                     <img className="hover-icon-hide" src="assets/images/blog/arrow.svg" alt="Arrow" />
                   </Link>
@@ -36,23 +36,23 @@ export default function BlogHomeTwo() {
             </div>
           </div>
           <div className="col-xl-4 col-md-6">
-            <div className="azzle-blog-wrap" data-aos="fade-up" data-aos-delay="700">
-              <div className="azzle-blog-thumb">
+            <div className="rk-theme-blog-wrap" data-aos="fade-up" data-aos-delay="700">
+              <div className="rk-theme-blog-thumb">
                 <img src="assets/images/blog/blog2.png" alt="thumb" />
               </div>
-              <div className="azzle-blog-content">
+              <div className="rk-theme-blog-content">
                 <Link href="/single-blog">
                   <h3>How to build your own AI chatbot with custom data</h3>
                 </Link>
-                <div className="azzle-blog-data-wrap">
-                  <div className="azzle-blog-meta">
+                <div className="rk-theme-blog-data-wrap">
+                  <div className="rk-theme-blog-meta">
                     <ul>
                       <li>
                         <Link href="/single-blog">20 June 2024</Link>
                       </li>
                     </ul>
                   </div>
-                  <Link className="azzle-blog-btn azzle-icon-hover" href="/single-blog">
+                  <Link className="rk-theme-blog-btn rk-theme-icon-hover" href="/single-blog">
                     <img className="hover-icon-show" src="assets/images/blog/arrow.svg" alt="Arrow" />
                     <img className="hover-icon-hide" src="assets/images/blog/arrow.svg" alt="Arrow" />
                   </Link>
@@ -61,23 +61,23 @@ export default function BlogHomeTwo() {
             </div>
           </div>
           <div className="col-xl-4 col-md-6">
-            <div className="azzle-blog-wrap" data-aos="fade-up" data-aos-delay="900">
-              <div className="azzle-blog-thumb">
+            <div className="rk-theme-blog-wrap" data-aos="fade-up" data-aos-delay="900">
+              <div className="rk-theme-blog-thumb">
                 <img src="assets/images/blog/blog3.png" alt="thumb" />
               </div>
-              <div className="azzle-blog-content">
+              <div className="rk-theme-blog-content">
                 <Link href="/single-blog">
                   <h3>8 best AI chatbot tools for boost your business</h3>
                 </Link>
-                <div className="azzle-blog-data-wrap">
-                  <div className="azzle-blog-meta">
+                <div className="rk-theme-blog-data-wrap">
+                  <div className="rk-theme-blog-meta">
                     <ul>
                       <li>
                         <Link href="/single-blog">18 June 2024</Link>
                       </li>
                     </ul>
                   </div>
-                  <Link className="azzle-blog-btn azzle-icon-hover" href="/single-blog">
+                  <Link className="rk-theme-blog-btn rk-theme-icon-hover" href="/single-blog">
                     <img className="hover-icon-show" src="assets/images/blog/arrow.svg" alt="Arrow" />
                     <img className="hover-icon-hide" src="assets/images/blog/arrow.svg" alt="Arrow" />
                   </Link>

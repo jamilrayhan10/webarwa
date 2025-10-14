@@ -8,7 +8,7 @@ export default function TemplatesArea() {
       <div className="container">
 
 
-        {/* <div className="row">
+        <div className="row">
           <div className="col-lg-1"></div>
           <div className="col-lg-10 text-center">
             <div className="rk-theme-section-title text-center">
@@ -20,7 +20,7 @@ export default function TemplatesArea() {
           </div>
           <div className="col-lg-1"></div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="rk-theme-template-btn-area">
             <div className="rk-theme-template-btn text-center">
               <button className="active"><Link href="/templates">All</Link></button>
@@ -35,7 +35,7 @@ export default function TemplatesArea() {
         <div className="row">
           <div className="container">
             <div className="row">
-              <div className="col-3">
+              {/* <div className="col-3">
                 some info
                 some info
                 some info
@@ -45,16 +45,16 @@ export default function TemplatesArea() {
                 some info
                 some info
                 some info
-              </div>
-              <div className="col-9">
+              </div> */}
+              {/* <div className="col-9"> */}
                 <div className="row">
                   {products_data.map((item, i) => (
-                    <div key={i} className="col-lg-6">
+                    <div key={i} className="col-lg-4">
                       <div className="single-post-item rk-theme-template" data-aos="fade-up" data-aos-delay="500">
                         <div className="post-thumbnail">
-                          <img src="assets/images/blog/blog1.png" style={{ width: "100%" }} alt="" />
+                          <img src={item.thumb} style={{ width: "100%" }} alt="" />
                         </div>
-                        <div className="post-content">
+                        <div className="post-content rk-theme-template-title">
                           <Link href="/single-blog">
                             <h3 className="entry-title">
                               {item.title}
@@ -79,7 +79,7 @@ export default function TemplatesArea() {
                     </div>
                   ))}
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>

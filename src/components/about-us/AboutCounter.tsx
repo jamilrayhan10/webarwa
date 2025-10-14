@@ -13,10 +13,10 @@ export default function AboutCounter() {
     <div className="section">
       <div className="container">
         <div className="row">
-          <div className="azzle-counter-column">
+          <div className="rk-theme-counter-column">
             {counter_data.map((item, i) => (
-              <div key={i} className="azzle-counter-item azzle-counter-item2">
-                <h2 className="azzle-counter-data azzle-counter-data2" aria-label="2K+">
+              <div key={i} className="rk-theme-counter-item rk-theme-counter-item2">
+                <h2 className="rk-theme-counter-data rk-theme-counter-data2" aria-label="2K+">
                   <Count number={item.end} text={item.suffix} />
                 </h2>
                 <p>{item.label}</p>

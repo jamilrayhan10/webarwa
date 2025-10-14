@@ -48,24 +48,24 @@ export default function HeroHomeOne() {
           <img src="assets/images/home1/Dashboard.png" alt="Dashboard" />
         </div>
         <div className="divider"></div>
-        <div className="azzle-brand-slider-wraper">
-          <div className="azzle-brand-slider-title" data-aos="fade-up" data-aos-delay=".9s">
+        <div className="rk-theme-brand-slider-wraper">
+          <div className="rk-theme-brand-slider-title" data-aos="fade-up" data-aos-delay=".9s">
             <p>Companies of all sizes trust us to find AI SaaS critical to their growth and innovation</p>
           </div>
-          <Slider {...settings} className="azzle-brand-slider">
-            <div className="azzle-logo-icon-item">
+          <Slider {...settings} className="rk-theme-brand-slider">
+            <div className="rk-theme-logo-icon-item">
               <img src="assets/images/home1/icon1.svg" alt="Icon" />
             </div>
-            <div className="azzle-logo-icon-item">
+            <div className="rk-theme-logo-icon-item">
               <img src="assets/images/home1/icon2.svg" alt="Icon" />
             </div>
-            <div className="azzle-logo-icon-item">
+            <div className="rk-theme-logo-icon-item">
               <img src="assets/images/home1/icon3.svg" alt="Icon" />
             </div>
-            <div className="azzle-logo-icon-item">
+            <div className="rk-theme-logo-icon-item">
               <img src="assets/images/home1/icon4.svg" alt="Icon" />
             </div>
-            <div className="azzle-logo-icon-item">
+            <div className="rk-theme-logo-icon-item">
               <img src="assets/images/home1/icon5.svg" alt="Icon" />
             </div>
           </Slider>
