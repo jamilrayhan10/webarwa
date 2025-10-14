@@ -1,3 +1,4 @@
+import products_data from "@/data/products-data";
 import Link from "next/link";
 
 export default function FeaturedTemplates() {
@@ -23,14 +24,47 @@ export default function FeaturedTemplates() {
             <div className="rk-theme-template-btn text-center">
               <button className="active"><Link href="/templates">All</Link></button>
               <button><Link href="/templates">Starter</Link></button>
-              <button><Link href="/templates">SaaS</Link></button> 
-              <button><Link href="/templates">Software</Link></button> 
-              <button><Link href="/templates">Business</Link></button> 
+              <button><Link href="/templates">SaaS</Link></button>
+              <button><Link href="/templates">Software</Link></button>
+              <button><Link href="/templates">Business</Link></button>
             </div>
           </div>
         </div>
 
         <div className="row">
+          {products_data.map((item, i) => (
+            <div key={i} className="col-lg-4">
+              <div className="single-post-item rk-theme-template" data-aos="fade-up" data-aos-delay="500">
+                <div className="post-thumbnail">
+                  <img src={item.thumb} style={{ width: "100%" }} alt="" />
+                </div>
+                <div className="post-content rk-theme-template-title">
+                  <Link href="/single-blog">
+                    <h3 className="entry-title">
+                      {item.title}
+                    </h3>
+                  </Link>
+                  <p>Build faster with our collection of React, Next.js, Vue, and Nuxt templates, boilerplates, and starter kits. Whether it’s a landing page, dashboard.</p>
+                </div>
+                <div className="rk-theme-btn-area text-center">
+                  <div className="preview-btn">
+                    <Link href="/templates">
+                      Preview
+                    </Link>
+                  </div>
+                  <div className="download-btn">
+                    <Link href="/templates">
+                      Download
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          ))}
+
+
+{/* 
           <div className="col-lg-6">
             <div className="single-post-item rk-theme-template" data-aos="fade-up" data-aos-delay="500">
               <div className="post-thumbnail">
@@ -142,7 +176,9 @@ export default function FeaturedTemplates() {
               </div>
             </div>
 
-          </div>
+          </div> */}
+
+
         </div>
       </div>
     </div>
