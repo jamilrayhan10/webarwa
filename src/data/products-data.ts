@@ -3,6 +3,7 @@ const products_data = [
   {
     id: 1,
     title: "Affan – PWA Mobile React Next js Template",
+    live_link: "https://affan-nextjs.vercel.app/",
     thumb: "https://i.ibb.co/rLpJjKQ/preview.png",
     descriptions: [
       "The Affan is the latest technology-based multipurpose PWA-ready mobile Next js template. It comes with a Modern Design, React Next js, Bootstrap 5, Progressive web app (PWA) ready, and Dark & RTL features. It’s crafted with the latest trend in design & coded with all modern approaches. It’s a versatile & multi-dimensional usable template. All file codes have been well organized and nicely commented on for easy customization. It is fully responsive and optimized for mobile devices, ensuring that your application looks great on screens of any size.",
@@ -62,6 +63,7 @@ const products_data = [
   {
     id: 2,
     title: "Suha - PWA Ecommerce Next js Template",
+    live_link: "https://suha-nextjs.vercel.app/",
     thumb: "https://i.ibb.co/F45Vkc1d/preview.png",
     descriptions: [
       "The Affan is the latest technology-based multipurpose PWA-ready mobile Next js template. It comes with a Modern Design, React Next js, Bootstrap 5, Progressive web app (PWA) ready, and Dark & RTL features. It’s crafted with the latest trend in design & coded with all modern approaches. It’s a versatile & multi-dimensional usable template. All file codes have been well organized and nicely commented on for easy customization. It is fully responsive and optimized for mobile devices, ensuring that your application looks great on screens of any size.",
@@ -121,6 +123,7 @@ const products_data = [
   {
     id: 3,
     title: "Travgo - Travel Mobile App Next js Template",
+    live_link: "https://travgo-nextjs.vercel.app/",
     thumb: "https://i.ibb.co/kswMgY6d/01-Preview.jpg",
     descriptions: [
       "The Affan is the latest technology-based multipurpose PWA-ready mobile Next js template. It comes with a Modern Design, React Next js, Bootstrap 5, Progressive web app (PWA) ready, and Dark & RTL features. It’s crafted with the latest trend in design & coded with all modern approaches. It’s a versatile & multi-dimensional usable template. All file codes have been well organized and nicely commented on for easy customization. It is fully responsive and optimized for mobile devices, ensuring that your application looks great on screens of any size.",
@@ -180,6 +183,7 @@ const products_data = [
   {
     id: 4,
     title: "Vixan - Digital Creative Agency Next js Template",
+    live_link: "https://vixan-next-gsap.vercel.app/",
     thumb: "https://i.ibb.co/LzG7P8RV/00-Preview.jpg",
     descriptions: [
       "The Affan is the latest technology-based multipurpose PWA-ready mobile Next js template. It comes with a Modern Design, React Next js, Bootstrap 5, Progressive web app (PWA) ready, and Dark & RTL features. It’s crafted with the latest trend in design & coded with all modern approaches. It’s a versatile & multi-dimensional usable template. All file codes have been well organized and nicely commented on for easy customization. It is fully responsive and optimized for mobile devices, ensuring that your application looks great on screens of any size.",
@@ -239,6 +243,7 @@ const products_data = [
   {
     id: 5,
     title: "Lumara - Creative Branding Agency React JS Template",
+    live_link: "https://lumara-reactjs.vercel.app/",
     thumb: "https://i.ibb.co/ZR7NYFNt/prev.png",
     descriptions: [
       "The Affan is the latest technology-based multipurpose PWA-ready mobile Next js template. It comes with a Modern Design, React Next js, Bootstrap 5, Progressive web app (PWA) ready, and Dark & RTL features. It’s crafted with the latest trend in design & coded with all modern approaches. It’s a versatile & multi-dimensional usable template. All file codes have been well organized and nicely commented on for easy customization. It is fully responsive and optimized for mobile devices, ensuring that your application looks great on screens of any size.",
@@ -298,6 +303,7 @@ const products_data = [
   {
     id: 6,
     title: "Zenith AI - AI Startup & Technology React JS Template",
+    live_link: "https://zenith-reactjs.vercel.app/",
     thumb: "https://i.ibb.co/sdXyw86Q/prev.png",
     descriptions: [
       "The Affan is the latest technology-based multipurpose PWA-ready mobile Next js template. It comes with a Modern Design, React Next js, Bootstrap 5, Progressive web app (PWA) ready, and Dark & RTL features. It’s crafted with the latest trend in design & coded with all modern approaches. It’s a versatile & multi-dimensional usable template. All file codes have been well organized and nicely commented on for easy customization. It is fully responsive and optimized for mobile devices, ensuring that your application looks great on screens of any size.",
@@ -355,8 +361,9 @@ const products_data = [
     ],
   },
   {
-    id: 1,
+    id: 7,
     title: "PackPro - Transportation & Logistics Next JS Template",
+    live_link: "https://packpro-nextjs.vercel.app/",
     thumb: "https://i.ibb.co/BHGPG6Y2/prev.png",
     descriptions: [
       "The Affan is the latest technology-based multipurpose PWA-ready mobile Next js template. It comes with a Modern Design, React Next js, Bootstrap 5, Progressive web app (PWA) ready, and Dark & RTL features. It’s crafted with the latest trend in design & coded with all modern approaches. It’s a versatile & multi-dimensional usable template. All file codes have been well organized and nicely commented on for easy customization. It is fully responsive and optimized for mobile devices, ensuring that your application looks great on screens of any size.",
@@ -415,7 +422,8 @@ const products_data = [
   },
   {
     id: 1,
-    title: "Affan – PWA Mobile Next js Template",
+    title: "Affan – PWA Mobile App React js Template",
+    live_link: "https://affan-reactjs.vercel.app/",
     thumb: "https://i.ibb.co/rLpJjKQ/preview.png",
     descriptions: [
       "The Affan is the latest technology-based multipurpose PWA-ready mobile Next js template. It comes with a Modern Design, React Next js, Bootstrap 5, Progressive web app (PWA) ready, and Dark & RTL features. It’s crafted with the latest trend in design & coded with all modern approaches. It’s a versatile & multi-dimensional usable template. All file codes have been well organized and nicely commented on for easy customization. It is fully responsive and optimized for mobile devices, ensuring that your application looks great on screens of any size.",
