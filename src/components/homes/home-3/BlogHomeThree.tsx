@@ -34,7 +34,7 @@ export default function BlogHomeThree() {
                     June 18, 2025
                   </div>
                 </div>
-                <Link href="/single-blog">
+                <Link href="#">
                   <h3 className="entry-title">
                     10 ways to supercharge startup with AI integration
                   </h3>
@@ -57,7 +57,7 @@ export default function BlogHomeThree() {
                     June 16, 2025
                   </div>
                 </div>
-                <Link href="/single-blog">
+                <Link href="#">
                   <h3 className="entry-title">
                     Testing AI tools to improve product descriptions
                   </h3>
@@ -80,7 +80,7 @@ export default function BlogHomeThree() {
                     June 14, 2025
                   </div>
                 </div>
-                <Link href="/single-blog">
+                <Link href="#">
                   <h3 className="entry-title">
                     3 best AI businesses to make money with in 2024
                   </h3>

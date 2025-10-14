@@ -1,5 +1,6 @@
 import products_data from "@/data/products-data";
 import Link from "next/link";
+import slugify from "slugify";
 
 export default function FeaturedTemplates() {
   return (
@@ -39,7 +40,7 @@ export default function FeaturedTemplates() {
                   <img src={item.thumb} style={{ width: "100%" }} alt="" />
                 </div>
                 <div className="post-content rk-theme-template-title">
-                  <Link href={item.live_link} target="_blank">
+                  <Link href={`/templates${slugify(item.title, { lower: true })}`}>
                     <h3 className="entry-title">
                       {item.title}
                     </h3>
