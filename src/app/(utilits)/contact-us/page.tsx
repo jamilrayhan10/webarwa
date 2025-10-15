@@ -184,21 +184,34 @@ import FooterTwo from "@/layouts/footers/FooterTwo";
 
 export default function ContactPage() {
   // Client-side fetch to your API route
-  const sendMail = async (data: FormData) => {
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+  // const sendMail = async (data: FormData) => {
+  //   try {
+  //     const res = await fetch("/api/contact", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(data),
+  //     });
 
-      const result = await res.json();
-      return result;
-    } catch (err) {
-      console.error("Send mail error:", err);
-      return { success: false, error: "Something went wrong." };
-    }
-  };
+  //     const result = await res.json();
+  //     return result;
+  //   } catch (err) {
+  //     console.error("Send mail error:", err);
+  //     return { success: false, error: "Something went wrong." };
+  //   }
+  // };
+
+  // In client component
+const sendMail = async (data: FormData) => {
+  const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+  return res.json();
+};
+
+
+
 
   return (
     <Wrapper>
