@@ -24,7 +24,7 @@
 //   })
 //   .required();
 
- 
+
 
 
 //   type ContactAreaProps = {
@@ -35,7 +35,7 @@
 
 // export default function ContactArea({ senMail }: ContactAreaProps) {
 
-  
+
 
 
 //    const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
@@ -180,7 +180,7 @@ export default function ContactArea({ senMail }: ContactAreaProps) {
     if (res.success) {
       // alert("✅ Message sent successfully!");
       const notify = () => toast("Your Message send successful");
-    notify();
+      notify();
       reset();
     } else {
       alert("❌ " + res.error);
@@ -193,7 +193,7 @@ export default function ContactArea({ senMail }: ContactAreaProps) {
         <div className="row">
           <div className="col-lg-6">
             <div
-              className="rk-theme-default-content pr70" 
+              className="rk-theme-default-content pr70"
             >
               <h2>Get in touch with us directly</h2>
               <p className="mb-0">
@@ -220,7 +220,7 @@ export default function ContactArea({ senMail }: ContactAreaProps) {
           {/* Contact Form */}
           <div className="col-lg-6">
             <div
-              className="rk-theme-contact-box rk-theme-contact-form" 
+              className="rk-theme-contact-box rk-theme-contact-form"
             >
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="rk-theme-contact-column">
