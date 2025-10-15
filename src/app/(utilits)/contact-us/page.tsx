@@ -172,15 +172,16 @@
 //   );
 // }
 
+'use client'; // mark page as client if using hooks inside ContactArea
 
-import Contactus from "@/components/contact-us/ContactArea";
+import ContactArea, { FormData } from "@/components/contact-us/ContactArea";
 import Wrapper from "@/layouts/Wrapper";
 import HeaderOne from "@/layouts/headers/HeaderOne";
 import Breacrumb from "@/common/Breacrumb";
 import FooterTwo from "@/layouts/footers/FooterTwo";
-import { FormData } from "@/components/contact-us/ContactArea";
 
 export default function ContactPage() {
+  // Client-side fetch to your API route
   const sendMail = async (data: FormData) => {
     try {
       const res = await fetch("/api/contact", {
@@ -188,9 +189,11 @@ export default function ContactPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      return await res.json();
+
+      const result = await res.json();
+      return result;
     } catch (err) {
-      console.error(err);
+      console.error("Send mail error:", err);
       return { success: false, error: "Something went wrong." };
     }
   };
@@ -201,7 +204,7 @@ export default function ContactPage() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <Breacrumb title="Contact Us" page="Contact Us" />
-          <Contactus senMail={sendMail} />
+          <ContactArea senMail={sendMail} />
           <FooterTwo />
         </div>
       </div>
