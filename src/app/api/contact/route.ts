@@ -62,12 +62,12 @@ export async function POST(request: Request) {
     //   html: htmlTemplate,
     // });
     await transporter.sendMail({
-  from: `"Website Contact" <${process.env.SMTP_USERNAME}>`, // your email must stay here
-  to: process.env.MAIL_RECIVER_ADDRESS,
-  subject: `New Contact Message: ${data.templateName}`,
-  html: htmlTemplate,
-  replyTo: `${data.email}`, // user’s email here
-});
+      from: `"Website Contact" <${process.env.SMTP_USERNAME}>`, // your email must stay here
+      to: process.env.MAIL_RECIVER_ADDRESS,
+      subject: `New Contact Message: ${data.templateName}`,
+      html: htmlTemplate,
+      replyTo: `${data.email}`, // user’s email here
+    });
 
 
     return NextResponse.json({ success: true });
