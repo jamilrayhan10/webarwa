@@ -313,10 +313,11 @@
 //   }
 // }
 
+
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
-export const runtime = "nodejs"; // Node.js runtime required
+export const runtime = "nodejs";
 
 interface ContactFormData {
   name: string;
@@ -338,15 +339,17 @@ export async function POST(request: Request) {
     }
 
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.SMTP_USERNAME,
-        pass: process.env.SMTP_PASSWORD, // Gmail App Password
+        pass: process.env.SMTP_PASSWORD,
       },
     });
 
     const htmlTemplate = `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+      <div style="font-family: Arial, sans-serif; max-width:600px; margin:auto; padding:20px; border:1px solid #eee; border-radius:10px;">
         <h2>📩 New Contact Message</h2>
         <p><strong>Name:</strong> ${data.name}</p>
         <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
@@ -360,7 +363,7 @@ export async function POST(request: Request) {
     `;
 
     await transporter.sendMail({
-      from: `"${data.name}" <${data.email}>`,
+      from: `"${data.name}" <${process.env.SMTP_USERNAME}>`,
       to: process.env.MAIL_RECIVER_ADDRESS,
       subject: `New Contact Message: ${data.templateName}`,
       html: htmlTemplate,
@@ -375,3 +378,4 @@ export async function POST(request: Request) {
     );
   }
 }
+
