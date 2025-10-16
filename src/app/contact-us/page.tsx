@@ -6,42 +6,6 @@ import Breacrumb from "@/common/Breacrumb";
 import FooterTwo from "@/layouts/footers/FooterTwo";
 
  
-export const metadata = {
-  title: "Contact WebArwa – Get in Touch with Us",
-  description: "Have questions or need support? Contact WebArwa for inquiries about templates, services, or custom solutions.",
-  keywords: [
-    "contact WebArwa",
-    "support",
-    "template inquiry",
-    "web development support",
-    "React templates",
-    "Vue templates",
-    "Next.js templates",
-  ],
-  openGraph: {
-    title: "Contact WebArwa – Get in Touch",
-    description: "Reach out to WebArwa for any questions about templates, customization, or web services.",
-    url: "https://webarwa.com/contact",
-    siteName: "WebArwa",
-    images: [
-      {
-        url: "https://webarwa.com/contact-og-image.jpg",  
-        width: 1200,
-        height: 630,
-        alt: "Contact WebArwa",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact WebArwa – Get in Touch",
-    description: "Contact WebArwa for questions about web templates, customization, or services.",
-    images: ["https://webarwa.com/contact-og-image.jpg"],
-    creator: "@webarwa",
-  },
-};
 
 
 
