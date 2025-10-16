@@ -50,9 +50,7 @@ export async function POST(request: Request) {
             &copy; ${new Date().getFullYear()} RK Theme. All rights reserved.
           </div>
         </div>
-      </div>
-
-      
+      </div>      
     `;
 
     await transporter.sendMail({
