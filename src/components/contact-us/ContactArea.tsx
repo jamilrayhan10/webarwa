@@ -331,18 +331,100 @@ export default function ContactArea({ senMail }: ContactAreaProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" placeholder="Name" {...register("name")} />
-      <p>{errors.name?.message}</p>
-      <input type="email" placeholder="Email" {...register("email")} />
-      <p>{errors.email?.message}</p>
-      <input type="text" placeholder="Purchase Code" {...register("purchaseCode")} />
-      <p>{errors.purchaseCode?.message}</p>
-      <input type="text" placeholder="Template Name" {...register("templateName")} />
-      <p>{errors.templateName?.message}</p>
-      <textarea placeholder="Message" {...register("message")} />
-      <p>{errors.message?.message}</p>
-      <button type="submit">Send Message</button>
-    </form>
+       <div className="rk-theme-section-padding" style={{ marginBottom: "80px" }}>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6">
+            <div
+              className="rk-theme-default-content pr70"
+            >
+              <h2>Get in touch with us directly</h2>
+              <p className="mb-0">
+                We are here to help you! Tell us how we can help & we'll be in
+                touch with an expert within the next 24 hours.
+              </p>
+              <div className="mt-50">
+                <div className="rk-theme-contact-info-wrap">
+                  <div className="rk-theme-contact-info-item">
+                    <h5>Send us an email:</h5>
+                    <a href="mailto:jamilrayhan10@gmail.com">
+                      jamilrayhan10@gmail.com
+                    </a>
+                  </div>
+                  <div className="rk-theme-contact-info-item">
+                    <h5>Give us a call:</h5>
+                    <a href="tel:01300972752">+8801300972752</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="col-lg-6">
+            <div
+              className="rk-theme-contact-box rk-theme-contact-form"
+            >
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="rk-theme-contact-column">
+                  <div className="rk-theme-contact-field">
+                    <label>Enter your name</label>
+                    <input
+                      type="text"
+                      placeholder="Adam Smith"
+                      {...register("name")}
+                    />
+                    <small>{errors.name?.message}</small>
+                  </div>
+                  <div className="rk-theme-contact-field">
+                    <label>Email address</label>
+                    <input
+                      type="email"
+                      placeholder="example@gmail.com"
+                      {...register("email")}
+                    />
+                    <small>{errors.email?.message}</small>
+                  </div>
+                </div>
+
+                <div className="rk-theme-contact-column">
+                  <div className="rk-theme-contact-field">
+                    <label>Purchase Code</label>
+                    <input
+                      type="text"
+                      placeholder="Purchase Code"
+                      {...register("purchaseCode")}
+                    />
+                    <small>{errors.purchaseCode?.message}</small>
+                  </div>
+                  <div className="rk-theme-contact-field">
+                    <label>Template Name</label>
+                    <input
+                      type="text"
+                      placeholder="Template Name"
+                      {...register("templateName")}
+                    />
+                    <small>{errors.templateName?.message}</small>
+                  </div>
+                </div>
+
+                <div className="rk-theme-contact-field">
+                  <label>Message</label>
+                  <textarea
+                    placeholder="Write your message here..."
+                    {...register("message")}
+                  />
+                  <small>{errors.message?.message}</small>
+                </div>
+
+                <button id="rk-theme-main-submit-btn" type="submit">
+                  Send your message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
