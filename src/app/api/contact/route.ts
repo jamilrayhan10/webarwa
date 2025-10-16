@@ -255,10 +255,68 @@
 // }
 
 
-import { Resend } from "resend";
+// import { Resend } from "resend";
+// import { NextResponse } from "next/server";
+
+// export const runtime = "nodejs"; // ensures server runtime
+
+// interface ContactFormData {
+//   name: string;
+//   email: string;
+//   purchaseCode: string;
+//   templateName: string;
+//   message: string;
+// }
+
+// const resendApiKey = process.env.RESEND_API;
+// if (!resendApiKey) throw new Error("Missing RESEND_API key.");
+
+// const resend = new Resend(resendApiKey);
+
+// export async function POST(request: Request) {
+//   try {
+//     const data: ContactFormData = await request.json();
+
+//     if (!data.name || !data.email || !data.message) {
+//       return NextResponse.json(
+//         { success: false, error: "Name, email, and message are required." },
+//         { status: 400 }
+//       );
+//     }
+
+//     await resend.emails.send({
+//       from: "Your Site <no-reply@yoursite.com>",
+//       to: process.env.MAIL_RECIVER_ADDRESS!,
+//       subject: `New Contact Message: ${data.templateName}`,
+//       html: `
+//         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+//           <h2>📩 New Contact Message</h2>
+//           <p><strong>Name:</strong> ${data.name}</p>
+//           <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+//           <p><strong>Purchase Code:</strong> ${data.purchaseCode}</p>
+//           <p><strong>Template Name:</strong> ${data.templateName}</p>
+//           <h3>Message:</h3>
+//           <p>${data.message}</p>
+//           <hr/>
+//           <p style="font-size:12px;color:#999;">Sent from your website contact form.</p>
+//         </div>
+//       `,
+//     });
+
+//     return NextResponse.json({ success: true });
+//   } catch (error) {
+//     console.error("Email send failed:", error);
+//     return NextResponse.json(
+//       { success: false, error: "Failed to send email." },
+//       { status: 500 }
+//     );
+//   }
+// }
+
+import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
-export const runtime = "nodejs"; // ensures server runtime
+export const runtime = "nodejs"; // Node.js runtime required
 
 interface ContactFormData {
   name: string;
@@ -267,11 +325,6 @@ interface ContactFormData {
   templateName: string;
   message: string;
 }
-
-const resendApiKey = process.env.RESEND_API;
-if (!resendApiKey) throw new Error("Missing RESEND_API key.");
-
-const resend = new Resend(resendApiKey);
 
 export async function POST(request: Request) {
   try {
@@ -284,23 +337,33 @@ export async function POST(request: Request) {
       );
     }
 
-    await resend.emails.send({
-      from: "Your Site <no-reply@yoursite.com>",
-      to: process.env.MAIL_RECIVER_ADDRESS!,
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.SMTP_USERNAME,
+        pass: process.env.SMTP_PASSWORD, // Gmail App Password
+      },
+    });
+
+    const htmlTemplate = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+        <h2>📩 New Contact Message</h2>
+        <p><strong>Name:</strong> ${data.name}</p>
+        <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+        <p><strong>Purchase Code:</strong> ${data.purchaseCode}</p>
+        <p><strong>Template Name:</strong> ${data.templateName}</p>
+        <h3>Message:</h3>
+        <p>${data.message}</p>
+        <hr/>
+        <p style="font-size:12px;color:#999;">Sent from your website contact form.</p>
+      </div>
+    `;
+
+    await transporter.sendMail({
+      from: `"${data.name}" <${data.email}>`,
+      to: process.env.MAIL_RECIVER_ADDRESS,
       subject: `New Contact Message: ${data.templateName}`,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
-          <h2>📩 New Contact Message</h2>
-          <p><strong>Name:</strong> ${data.name}</p>
-          <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
-          <p><strong>Purchase Code:</strong> ${data.purchaseCode}</p>
-          <p><strong>Template Name:</strong> ${data.templateName}</p>
-          <h3>Message:</h3>
-          <p>${data.message}</p>
-          <hr/>
-          <p style="font-size:12px;color:#999;">Sent from your website contact form.</p>
-        </div>
-      `,
+      html: htmlTemplate,
     });
 
     return NextResponse.json({ success: true });
