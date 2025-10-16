@@ -1,6 +1,5 @@
-import HomeOne from "@/components/homes/home-1";
-
- // app/page.tsx
+import HomeOne from "@/components/home";
+ 
 export const metadata = {
   title: "WebArwa – Premium Web Templates & Themes",
   description: "Buy and download high-quality web templates and themes built with React, Vue, and Next.js.",

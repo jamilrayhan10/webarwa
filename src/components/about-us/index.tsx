@@ -9,23 +9,22 @@ import AboutTeam from "./AboutTeam";
 import AboutCta from "./AboutCta";
 import FooterOne from "@/layouts/footers/FooterOne";
 import FooterTwo from "@/layouts/footers/FooterTwo";
+import AboutJsonLD from "../seo/AboutJsonLD";
 
  
 
 export default function Aboutus() {
   return (
     <Wrapper>
+      <AboutJsonLD />
       <HeaderOne />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <Breacrumb title="About Us" page="About Us" />
           <AboutArea />
-          <AboutCounter />
-          {/* <SolutionsArea /> */}
+          <AboutCounter /> 
           <OurWorkArea />
-          <AboutTeam />
-          {/* <AboutCta /> */}
-          {/* <FooterOne />          */}
+          <AboutTeam /> 
           <FooterTwo />
         </div>
       </div>
