@@ -213,6 +213,7 @@
 //   );
 // }
 
+
 "use client";
 import ContactArea, { FormData } from "@/components/contact-us/ContactArea";
 import Wrapper from "@/layouts/Wrapper";
@@ -228,7 +229,6 @@ export default function ContactPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-
       return await res.json();
     } catch (err) {
       console.error(err);

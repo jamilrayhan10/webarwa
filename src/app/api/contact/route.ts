@@ -255,14 +255,11 @@
 // }
 
 
-
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-// Ensure Node.js runtime
-export const runtime = "nodejs";
+export const runtime = "nodejs"; // ensures server runtime
 
-// Define the contact form data type
 interface ContactFormData {
   name: string;
   email: string;
@@ -271,14 +268,8 @@ interface ContactFormData {
   message: string;
 }
 
-// Load Resend API key
 const resendApiKey = process.env.RESEND_API;
-
-if (!resendApiKey) {
-  throw new Error(
-    "Missing RESEND_API key. Add it to your environment variables."
-  );
-}
+if (!resendApiKey) throw new Error("Missing RESEND_API key.");
 
 const resend = new Resend(resendApiKey);
 
@@ -286,7 +277,6 @@ export async function POST(request: Request) {
   try {
     const data: ContactFormData = await request.json();
 
-    // Validate required fields
     if (!data.name || !data.email || !data.message) {
       return NextResponse.json(
         { success: false, error: "Name, email, and message are required." },
@@ -294,14 +284,13 @@ export async function POST(request: Request) {
       );
     }
 
-    // Send email using Resend
-    const email = await resend.emails.send({
+    await resend.emails.send({
       from: "Your Site <no-reply@yoursite.com>",
       to: process.env.MAIL_RECIVER_ADDRESS!,
       subject: `New Contact Message: ${data.templateName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
-          <h2 style="color: #0d6efd;">📩 New Contact Message</h2>
+          <h2>📩 New Contact Message</h2>
           <p><strong>Name:</strong> ${data.name}</p>
           <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
           <p><strong>Purchase Code:</strong> ${data.purchaseCode}</p>
@@ -309,12 +298,10 @@ export async function POST(request: Request) {
           <h3>Message:</h3>
           <p>${data.message}</p>
           <hr/>
-          <p style="font-size:12px;color:#999;">This email was sent from your website contact form.</p>
+          <p style="font-size:12px;color:#999;">Sent from your website contact form.</p>
         </div>
       `,
     });
-
-    // console.log("Email sent with Resend:", email.id);
 
     return NextResponse.json({ success: true });
   } catch (error) {
@@ -325,7 +312,3 @@ export async function POST(request: Request) {
     );
   }
 }
-
-
-
- 
