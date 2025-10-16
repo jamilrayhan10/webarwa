@@ -7,17 +7,7 @@ import OurWorkArea from "./OurWorkArea";
 import AboutTeam from "./AboutTeam"; 
 import FooterTwo from "@/layouts/footers/FooterTwo";
 import AboutJsonLD from "../seo/AboutJsonLD";
-
  
-
-
-
-
-
-
-
-
-
 
 export default function Aboutus() {
   return (
