@@ -1,70 +1,70 @@
  
 
-import Contactus from "@/components/contact-us/ContactArea";
-import nodemailer from "nodemailer";
-import { FormData } from "@/components/contact-us/ContactArea";
-import Wrapper from "@/layouts/Wrapper";
-import HeaderOne from "@/layouts/headers/HeaderOne";
-import Breacrumb from "@/common/Breacrumb";
-import FooterTwo from "@/layouts/footers/FooterTwo";
+// import Contactus from "@/components/contact-us/ContactArea";
+// import nodemailer from "nodemailer";
+// import { FormData } from "@/components/contact-us/ContactArea";
+// import Wrapper from "@/layouts/Wrapper";
+// import HeaderOne from "@/layouts/headers/HeaderOne";
+// import Breacrumb from "@/common/Breacrumb";
+// import FooterTwo from "@/layouts/footers/FooterTwo";
 
-export default function ContactPage() { 
-  const sendMail = async (data: FormData) => {
-    "use server";
+// export default function ContactPage() { 
+//   const sendMail = async (data: FormData) => {
+//     "use server";
 
-    try { 
-      const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-          user: process.env.SMTP_USERNAME,
-          pass: process.env.SMTP_PASSWORD,
-        },
-      });
+//     try { 
+//       const transporter = nodemailer.createTransport({
+//         service: "gmail",
+//         auth: {
+//           user: process.env.SMTP_USERNAME,
+//           pass: process.env.SMTP_PASSWORD,
+//         },
+//       });
 
-      // Send email
-      const info = await transporter.sendMail({
-        from: `"${data.name}" <${data.email}>`,
-        to: process.env.MAIL_RECIVER_ADDRESS,
-        subject: `New Message from ${data.templateName}`,
-        text: `
-Name: ${data.name}
-Email: ${data.email}
-Purchase Code: ${data.purchaseCode}
-Template Name: ${data.templateName}
-Message: ${data.message}
-        `,
-        html: `
-          <h2>New Contact Message</h2>
-          <p><strong>Name:</strong> ${data.name}</p>
-          <p><strong>Email:</strong> ${data.email}</p>
-          <p><strong>Purchase Code:</strong> ${data.purchaseCode}</p>
-          <p><strong>Template Name:</strong> ${data.templateName}</p>
-          <p><strong>Message:</strong><br>${data.message}</p>
-        `,
-      });
+//       // Send email
+//       const info = await transporter.sendMail({
+//         from: `"${data.name}" <${data.email}>`,
+//         to: process.env.MAIL_RECIVER_ADDRESS,
+//         subject: `New Message from ${data.templateName}`,
+//         text: `
+// Name: ${data.name}
+// Email: ${data.email}
+// Purchase Code: ${data.purchaseCode}
+// Template Name: ${data.templateName}
+// Message: ${data.message}
+//         `,
+//         html: `
+//           <h2>New Contact Message</h2>
+//           <p><strong>Name:</strong> ${data.name}</p>
+//           <p><strong>Email:</strong> ${data.email}</p>
+//           <p><strong>Purchase Code:</strong> ${data.purchaseCode}</p>
+//           <p><strong>Template Name:</strong> ${data.templateName}</p>
+//           <p><strong>Message:</strong><br>${data.message}</p>
+//         `,
+//       });
 
-      console.log("Message sent:", info.messageId);
-      return { success: true };
-    } catch (error) {
-      console.error("Mail send failed:", error);
-      return { success: false, error: "Failed to send email" };
-    }
-  };
+//       console.log("Message sent:", info.messageId);
+//       return { success: true };
+//     } catch (error) {
+//       console.error("Mail send failed:", error);
+//       return { success: false, error: "Failed to send email" };
+//     }
+//   };
 
-  return (
-    <Wrapper>
-      <HeaderOne />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <Breacrumb title="Contact Us" page="Contact Us" /> 
-          <Contactus senMail={sendMail} />
-          <FooterTwo />
-        </div>
-      </div>
-    </Wrapper>
+//   return (
+//     <Wrapper>
+//       <HeaderOne />
+//       <div id="smooth-wrapper">
+//         <div id="smooth-content">
+//           <Breacrumb title="Contact Us" page="Contact Us" /> 
+//           <Contactus senMail={sendMail} />
+//           <FooterTwo />
+//         </div>
+//       </div>
+//     </Wrapper>
 
-  )
-}
+//   )
+// }
 
 
 // import nodemailer from "nodemailer";
@@ -171,5 +171,82 @@ Message: ${data.message}
 //     </Wrapper>
 //   );
 // }
- 
- 
+  
+
+
+// import Contactus from "@/components/contact-us/ContactArea";
+// import Wrapper from "@/layouts/Wrapper";
+// import HeaderOne from "@/layouts/headers/HeaderOne";
+// import Breacrumb from "@/common/Breacrumb";
+// import FooterTwo from "@/layouts/footers/FooterTwo";
+// import { FormData } from "@/components/contact-us/ContactArea";
+
+// export default function ContactPage() {
+//   const sendMail = async (data: FormData) => {
+//     "use server";
+
+//     try {
+//       const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/contact`, {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify(data),
+//       });
+
+//       return await res.json();
+//     } catch (err) {
+//       console.error("Failed to send:", err);
+//       return { success: false, error: "Network error" };
+//     }
+//   };
+
+//   return (
+//     <Wrapper>
+//       <HeaderOne />
+//       <div id="smooth-wrapper">
+//         <div id="smooth-content">
+//           <Breacrumb title="Contact Us" page="Contact Us" />
+//           <Contactus senMail={sendMail} />
+//           <FooterTwo />
+//         </div>
+//       </div>
+//     </Wrapper>
+//   );
+// }
+
+
+"use client";
+import ContactArea, { FormData } from "@/components/contact-us/ContactArea";
+import Wrapper from "@/layouts/Wrapper";
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import Breacrumb from "@/common/Breacrumb";
+import FooterTwo from "@/layouts/footers/FooterTwo";
+
+export default function ContactPage() {
+  const sendMail = async (data: FormData) => {
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      return await res.json();
+    } catch (err) {
+      console.error(err);
+      return { success: false, error: "Something went wrong." };
+    }
+  };
+
+  return (
+    <Wrapper>
+      <HeaderOne />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <Breacrumb title="Contact Us" page="Contact Us" />
+          <ContactArea senMail={sendMail} />
+          <FooterTwo />
+        </div>
+      </div>
+    </Wrapper>
+  );
+}
