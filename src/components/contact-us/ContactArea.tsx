@@ -175,17 +175,27 @@ export default function ContactArea({ senMail }: ContactAreaProps) {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data: FormData) => {
-    const res = await senMail(data);
-    if (res.success) {
-      // alert("✅ Message sent successfully!");
-      const notify = () => toast.success("Your message was sent successfully!");
-      notify();
-      reset();
-    } else {
-      toast.error(res.error || "Something went wrong.");
-    }
-  };
+  // const onSubmit = async (data: FormData) => {
+  //   const res = await senMail(data);
+  //   if (res.success) {
+  //     // alert("✅ Message sent successfully!");
+  //     const notify = () => toast.success("Your message was sent successfully!");
+  //     notify();
+  //     reset();
+  //   } else {
+  //     toast.error(res.error || "Something went wrong.");
+  //   }
+  // };
+ 
+const onSubmit = async (data: FormData) => {
+  const res = await senMail(data);
+  if (res.success) {
+    toast.success("Your message has been sent successfully!");
+    reset();
+  } else {
+    toast.error(res.error || "Failed to send message.");
+  }
+};
 
 
 

@@ -177,13 +177,92 @@
 // }
 
 
-import { NextResponse } from "next/server";
+
+// import { NextResponse } from "next/server";
+// import { Resend } from "resend";
+
+// export const runtime = "nodejs"; // ensures Node.js runtime
+
+// const resend = new Resend(process.env.RESEND_API!);
+
+// interface ContactFormData {
+//   name: string;
+//   email: string;
+//   purchaseCode: string;
+//   templateName: string;
+//   message: string;
+// }
+
+// export async function POST(request: Request) {
+//   try {
+//     const data: ContactFormData = await request.json();
+
+//     if (!data.name || !data.email || !data.message) {
+//       return NextResponse.json(
+//         { success: false, error: "Name, email, and message are required." },
+//         { status: 400 }
+//       );
+//     }
+
+//     const htmlTemplate = `
+//       <div style="font-family: 'Segoe UI', Helvetica, Arial, sans-serif; background-color: #f5f6fa; padding: 40px;">
+//         <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+//           <div style="background-color: #0d6efd; color: #ffffff; padding: 20px 30px; text-align: center;">
+//             <h2 style="margin: 0; font-size: 22px;">📩 New Contact Message</h2>
+//           </div>
+//           <div style="padding: 30px;">
+//             <p style="font-size: 16px; color: #333; margin-bottom: 25px;">
+//               You’ve received a new message from your website contact form.
+//             </p>
+//             <table style="width: 100%; border-collapse: collapse;">
+//               <tr><td style="font-weight: bold; padding: 8px 0; width: 150px;">Name:</td><td style="color: #555;">${data.name}</td></tr>
+//               <tr><td style="font-weight: bold; padding: 8px 0;">Email:</td><td><a href="mailto:${data.email}" style="color: #0d6efd;">${data.email}</a></td></tr>
+//               <tr><td style="font-weight: bold; padding: 8px 0;">Purchase Code:</td><td style="color: #555;">${data.purchaseCode}</td></tr>
+//               <tr><td style="font-weight: bold; padding: 8px 0;">Template Name:</td><td style="color: #555;">${data.templateName}</td></tr>
+//             </table>
+//             <div style="margin-top: 30px;">
+//               <h3 style="font-size: 18px; color: #0d6efd; margin-bottom: 10px;">Message:</h3>
+//               <div style="background-color: #f1f3f5; padding: 20px; border-radius: 8px; color: #333; line-height: 1.6;">
+//                 ${data.message}
+//               </div>
+//             </div>
+//           </div>
+//           <div style="background-color: #f8f9fa; text-align: center; padding: 15px;">
+//             <p style="margin: 0; font-size: 13px; color: #999;">
+//               This message was sent from your website contact form.<br/>
+//               &copy; ${new Date().getFullYear()} RK Theme. All rights reserved.
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//     `;
+
+//     await resend.emails.send({
+//       from: `RK Theme <${process.env.MAIL_RECIVER_ADDRESS!}>`,
+//       to: process.env.MAIL_RECIVER_ADDRESS!,
+//       subject: `New Contact Message: ${data.templateName}`,
+//       html: htmlTemplate,
+//     });
+
+//     return NextResponse.json({ success: true });
+//   } catch (error) {
+//     console.error("Resend email error:", error);
+//     return NextResponse.json(
+//       { success: false, error: "Failed to send email." },
+//       { status: 500 }
+//     );
+//   }
+// }
+
+
+
 import { Resend } from "resend";
+import { NextResponse } from "next/server";
 
-export const runtime = "nodejs"; // ensures Node.js runtime
+// Ensure Node.js runtime
+export const runtime = "nodejs";
 
-const resend = new Resend(process.env.RESEND_API!);
-
+// Define the contact form data type
 interface ContactFormData {
   name: string;
   email: string;
@@ -192,10 +271,22 @@ interface ContactFormData {
   message: string;
 }
 
+// Load Resend API key
+const resendApiKey = process.env.RESEND_API;
+
+if (!resendApiKey) {
+  throw new Error(
+    "Missing RESEND_API key. Add it to your environment variables."
+  );
+}
+
+const resend = new Resend(resendApiKey);
+
 export async function POST(request: Request) {
   try {
     const data: ContactFormData = await request.json();
 
+    // Validate required fields
     if (!data.name || !data.email || !data.message) {
       return NextResponse.json(
         { success: false, error: "Name, email, and message are required." },
@@ -203,49 +294,31 @@ export async function POST(request: Request) {
       );
     }
 
-    const htmlTemplate = `
-      <div style="font-family: 'Segoe UI', Helvetica, Arial, sans-serif; background-color: #f5f6fa; padding: 40px;">
-        <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-          <div style="background-color: #0d6efd; color: #ffffff; padding: 20px 30px; text-align: center;">
-            <h2 style="margin: 0; font-size: 22px;">📩 New Contact Message</h2>
-          </div>
-          <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #333; margin-bottom: 25px;">
-              You’ve received a new message from your website contact form.
-            </p>
-            <table style="width: 100%; border-collapse: collapse;">
-              <tr><td style="font-weight: bold; padding: 8px 0; width: 150px;">Name:</td><td style="color: #555;">${data.name}</td></tr>
-              <tr><td style="font-weight: bold; padding: 8px 0;">Email:</td><td><a href="mailto:${data.email}" style="color: #0d6efd;">${data.email}</a></td></tr>
-              <tr><td style="font-weight: bold; padding: 8px 0;">Purchase Code:</td><td style="color: #555;">${data.purchaseCode}</td></tr>
-              <tr><td style="font-weight: bold; padding: 8px 0;">Template Name:</td><td style="color: #555;">${data.templateName}</td></tr>
-            </table>
-            <div style="margin-top: 30px;">
-              <h3 style="font-size: 18px; color: #0d6efd; margin-bottom: 10px;">Message:</h3>
-              <div style="background-color: #f1f3f5; padding: 20px; border-radius: 8px; color: #333; line-height: 1.6;">
-                ${data.message}
-              </div>
-            </div>
-          </div>
-          <div style="background-color: #f8f9fa; text-align: center; padding: 15px;">
-            <p style="margin: 0; font-size: 13px; color: #999;">
-              This message was sent from your website contact form.<br/>
-              &copy; ${new Date().getFullYear()} RK Theme. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </div>
-    `;
-
-    await resend.emails.send({
-      from: `RK Theme <${process.env.MAIL_RECIVER_ADDRESS!}>`,
+    // Send email using Resend
+    const email = await resend.emails.send({
+      from: "Your Site <no-reply@yoursite.com>",
       to: process.env.MAIL_RECIVER_ADDRESS!,
       subject: `New Contact Message: ${data.templateName}`,
-      html: htmlTemplate,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+          <h2 style="color: #0d6efd;">📩 New Contact Message</h2>
+          <p><strong>Name:</strong> ${data.name}</p>
+          <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+          <p><strong>Purchase Code:</strong> ${data.purchaseCode}</p>
+          <p><strong>Template Name:</strong> ${data.templateName}</p>
+          <h3>Message:</h3>
+          <p>${data.message}</p>
+          <hr/>
+          <p style="font-size:12px;color:#999;">This email was sent from your website contact form.</p>
+        </div>
+      `,
     });
+
+    // console.log("Email sent with Resend:", email.id);
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Resend email error:", error);
+    console.error("Email send failed:", error);
     return NextResponse.json(
       { success: false, error: "Failed to send email." },
       { status: 500 }

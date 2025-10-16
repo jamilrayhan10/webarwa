@@ -213,7 +213,6 @@
 //   );
 // }
 
-
 "use client";
 import ContactArea, { FormData } from "@/components/contact-us/ContactArea";
 import Wrapper from "@/layouts/Wrapper";
