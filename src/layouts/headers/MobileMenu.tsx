@@ -35,7 +35,7 @@ export default function MobileMenu({ setIsOpen, isOpen }: MobileMenuProps) {
           <div className="rk-theme-menu-mobile-top">
             <div className="mobile-logo">
               <Link href="/">
-                <img src="assets/images/logo.png" alt="logo" />
+                <img src="assets/images/log-dark.png" alt="logo" />
               </Link>
             </div>
             <button className="rk-theme-menu-toggle mobile" onClick={() => setIsOpen && setIsOpen(false)}>

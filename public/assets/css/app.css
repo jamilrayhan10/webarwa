@@ -3142,8 +3142,8 @@ header.hide-header {
   }
 }
 .rk-theme-contact-field label {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -5625,7 +5625,7 @@ input, textarea {
   padding: 15px 24px;
   border: 1px solid var(--light-color8);
   transition: all 0.4s;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 input[type=text]::placeholder,

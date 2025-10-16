@@ -1,0 +1,21 @@
+
+# robots.txt for https://webarwa.com
+# Last updated: October 2025
+
+User-agent: *
+Allow: /
+
+# Disallow sensitive or unnecessary routes
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /register/
+Disallow: /dashboard/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Sitemap
+Sitemap: https://webarwa.com/sitemap.xml
+
+# Host
+Host: https://webarwa.com

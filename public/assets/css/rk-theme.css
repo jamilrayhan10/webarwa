@@ -1,5 +1,11 @@
  
 
+ /* p{
+  font-size: 14px !important;
+} */
+
+
+
 /* hero section */
 .rk-theme-section h1.rk-title {
   font-family: "Outfit";
@@ -168,3 +174,4 @@
   border-top: 1px solid var(--variable-color1);
   opacity: .5;
 }
+

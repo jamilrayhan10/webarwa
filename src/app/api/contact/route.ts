@@ -35,7 +35,7 @@ export async function POST(request: Request) {
     const htmlTemplate = ` 
        <div style="font-family: Arial, sans-serif; background:#f5f6fa; padding:20px;">
         <div style="max-width:600px; margin:0 auto; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.05);">
-          <div style="background:#0d6efd; color:#fff; padding:20px; text-align:center;">
+          <div style="background:#0d6efd; color:#fff; padding:20px; text-align:center; display:flex; align-items:center; justify-content:center;">
             <h2>📩 New Contact Message</h2>
           </div>
           <div style="padding:20px; color:#333;">

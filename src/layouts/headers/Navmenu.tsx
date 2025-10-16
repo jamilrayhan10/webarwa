@@ -15,15 +15,8 @@ export default function Navmenu({ menu_style = false }: NavmenuProps) {
           {/* {item.has_submenu &&
             <ul className="sub-menu">
               {item.sub_menus?.map((sub_item, index) => (
-                <li key={index} className={`${sub_item.has_inner_submenu ? "menu-item-has-children" : ""}`}>
-                  <Link className="no-border" href={sub_item.path}>{sub_item.title}</Link>
-                  {sub_item.has_inner_submenu &&
-                    <ul className="sub-menu">
-                      {sub_item.sub_menus?.map((inner_item, inner_index) => (
-                        <li key={inner_index}><Link href={inner_item.path}>{inner_item.title}</Link></li>
-                      ))}
-                    </ul>
-                  }
+                <li key={index}>
+                  <Link className="no-border" href={sub_item.path}>{sub_item.title}</Link> 
                 </li>
               ))}
             </ul>

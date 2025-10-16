@@ -19,9 +19,9 @@ const menu_data  = [
     // has_submenu: true,
     path: "/templates",
     // sub_menus: [
-    //   { title: "Home 01", path: "/" },
-    //   { title: "Home 02", path: "/home-2" },
-    //   { title: "Home 03", path: "/home-3" },
+    //   { title: "Next JS", path: "/nextjs" },
+    //   { title: "Nuxt JS", path: "/nuxtjs" },
+    //   { title: "React JS", path: "/reactjs" },
     // ],
   },
   { title: "About Us", has_submenu: false, path: "/about-us" },
